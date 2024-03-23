@@ -1,0 +1,66 @@
+.trade-with-us {
+  padding-top: 240px;
+}
+.trade-with-us__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.trade-with-us__column {
+  position: relative;
+  z-index: 1;
+}
+
+.trade-with-us__title {
+  font-family: "Norwesterg", sans-serif;
+  color: #74c6be;
+  font-size: 78px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
+.text-trade-with-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  max-width: 705px;
+}
+
+.text-trade-with-us__item {
+  line-height: 122%;
+}
+
+.text-trade-with-us__item:first-child {
+  max-width: 540px;
+}
+
+.text-area {
+  flex: 1 1 60%;
+}
+
+.img-area {
+  flex: 1 1 40%;
+}
+
+.img-area__bg img {
+  max-width: 940px;
+}
+
+.img-area__bg {
+  position: absolute;
+  right: 0;
+  // right: -70px;
+  top: -20px;
+  z-index: 0;
+}
+
+.img-area__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-area__img {
+  position: relative;
+  z-index: 1;
+}
