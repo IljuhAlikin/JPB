@@ -13,10 +13,7 @@
 }
 
 .trade-with-us__title {
-  font-family: "Norwesterg", sans-serif;
-  color: #74c6be;
   font-size: 78px;
-  line-height: 100%;
   margin-bottom: 40px;
 }
 
@@ -29,10 +26,11 @@
 
 .text-trade-with-us__item {
   line-height: 122%;
+  font-size: 30px;
 }
 
 .text-trade-with-us__item:first-child {
-  max-width: 540px;
+  max-width: 660px;
 }
 
 .text-area {
