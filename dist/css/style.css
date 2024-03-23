@@ -39,15 +39,17 @@ img {
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: "Norwesterg";
   font-display: swap;
-  src: url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2");
+  src: url("../fonts/MR_NORWESTERG.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
   font-family: "Inter";
+  color: #333;
+  font-size: 24px;
 }
 
 ::-webkit-scrollbar {
@@ -195,6 +197,14 @@ body {
   z-index: 1;
 }
 
+.trade-with-us__title {
+  font-family: "Norwesterg", sans-serif;
+  color: #74c6be;
+  font-size: 78px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
 .text-area {
   flex: 1 1 60%;
 }
@@ -203,10 +213,16 @@ body {
   flex: 1 1 40%;
 }
 
+.img-area__bg img {
+  max-width: 940px;
+}
+
 .img-area__bg {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  right: -70px;
+  top: -20px;
   z-index: 0;
 }
 
