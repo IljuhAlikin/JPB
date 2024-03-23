@@ -46,10 +46,25 @@ img {
   font-style: normal;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Inter";
   color: #333;
   font-size: 24px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 ::-webkit-scrollbar {

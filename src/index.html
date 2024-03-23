@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   @@include("html/head.html", { "title": "JPB" })
-  <body>
-    @@include("html/header.html", {})
-    <main>@@include("html/first-screen.html", {})</main>
-    @@include("html/footer.html", {})
+    <div class="wrapper">
+      <body>
+        @@include("html/header.html", {})
+        <main class="main">
+          @@include("html/first-screen.html", {})
+        </main>
+        @@include("html/footer.html", {})
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
