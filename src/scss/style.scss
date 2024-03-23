@@ -6,16 +6,35 @@ body {
   font-family: "Inter";
 }
 
-.header {
-  height: 90px;
-  background: #333;
-  padding: 10px 0px;
+::-webkit-scrollbar {
+  width: 6px;
 }
-.header__container {
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b4b3;
+  border-radius: 4px;
+}
+
+[class*="__container"] {
   max-width: 1790px;
   padding: 0px 15px;
   margin: 0 auto;
+  width: 100%;
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background: #333;
+  padding: 10px 0px;
+  z-index: 5;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -24,8 +43,10 @@ body {
 .header__menu {
   display: flex;
   align-items: center;
-  gap: 105px;
+  column-gap: 105px;
+  row-gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__link {
   font-weight: 300;
@@ -38,8 +59,8 @@ body {
 .header__controls {
   display: flex;
   align-items: center;
-  gap: 3px;
   justify-content: end;
+  gap: 60px;
 }
 
 .header__logo {
@@ -54,6 +75,9 @@ body {
 }
 .header__language {
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .header__button {
   font-size: 18px;
@@ -87,7 +111,7 @@ body {
   height: 100%;
   background: none;
   border-radius: 9px;
-  border: 2px solid #74c6be;
+  border: 3px solid #74c6be;
   transition: 0.5s;
 }
 .switch-checkbox input:checked ~ span {
@@ -96,11 +120,60 @@ body {
 
 .switch-checkbox span i {
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
+  top: -1px;
   border-radius: 50%;
   background-color: #fabe00;
 }
 .switch-checkbox input:checked ~ span i {
   left: 11px;
+}
+
+.section {
+}
+.trade-with-us {
+  padding-top: 240px;
+}
+.trade-with-us__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.trade-with-us__column {
+  position: relative;
+  z-index: 1;
+}
+
+.trade-with-us__title {
+}
+.trade-with-us__text {
+}
+.text-trade-with-us {
+}
+
+.text-area {
+  flex: 1 1 60%;
+}
+
+.img-area {
+  flex: 1 1 40%;
+}
+
+.img-area__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.img-area__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-area__img {
+  position: relative;
+  z-index: 1;
 }

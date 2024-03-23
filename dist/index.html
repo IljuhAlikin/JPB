@@ -6,10 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240323202740"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240323213646"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240323202740" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240323213646" />
   <title>JPB</title>
 </head>
 
@@ -26,22 +26,57 @@
         <img src="img/JPB-logo.svg" alt="" />
       </div>
       <div class="header__controls header__column">
-        <div class="header__language">ru</div>
-        <label class="switch-checkbox">
-          <input type="checkbox" class="switch-checkbox__input" />
-          <span>
-            <i></i>
-          </span>
-        </label>
-        <div class="header__language">eng</div>
+        <div class="header__language">
+          <div class="language-header__link">ru</div>
+          <label class="switch-checkbox">
+            <input type="checkbox" class="switch-checkbox__input" />
+            <span>
+              <i></i>
+            </span>
+          </label>
+          <div class="language-header__link">eng</div>
+        </div>
+
         <a href="#" class="header__button">Личный кабинет</a>
       </div>
     </nav>
   </div>
 </header>
 
-    <main></main>
+    <main><section class="section trade-with-us">
+  <div class="trade-with-us__container">
+    <div class="trade-with-us__wrapper">
+      <div class="trade-with-us__column text-area">
+        <h1 class="trade-with-us__title">
+          Торгуйте на финансовых рынках вместе с JPB
+        </h1>
+        <ul class="trade-with-us__text text-trade-with-us">
+          <li class="text-trade-with-us__item">
+            Мы используем современные технологии, чтобы Вы могли пользоваться
+            лучшими сервисами для вашего заработка
+          </li>
+          <li class="text-trade-with-us__item">
+            Профессиональная торговая платформа cTrader
+          </li>
+          <li class="text-trade-with-us__item">
+            Начните зарабатывать с нами уже сегодня
+          </li>
+        </ul>
+      </div>
+      <div class="trade-with-us__column img-area">
+        <div class="img-area__bg">
+          <picture><source srcset="img/trade-with-us-bg.webp" type="image/webp"><img src="img/trade-with-us-bg.png" alt="" /></picture>
+        </div>
+        <div class="img-area__wrapper">
+          <picture><source srcset="img/phone-1.webp" type="image/webp"><img src="img/phone-1.png" alt="" class="img-area__img" /></picture>
+          <picture><source srcset="img/phone-2.webp" type="image/webp"><img src="img/phone-2.png" alt="" class="img-area__img" /></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
     <footer></footer>
-    <script src="js/app.min.js?_v=20240323202740"></script>
+    <script src="js/app.min.js?_v=20240323213646"></script>
   </body>
 </html>
