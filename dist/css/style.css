@@ -647,10 +647,16 @@ body {
   margin-bottom: 185px;
 }
 
+.trade-tools__title {
+  margin-bottom: 40px;
+}
+
 .trade-tools-tabs {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  justify-content: end;
+  transform: translateY(60px);
 }
 
 .trade-tools-tablink {
@@ -694,16 +700,23 @@ body {
 
 .trade-tools-tabcontent__wrapper {
   display: flex;
-  align-items: start;
+  align-items: end;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .trade-tools-tabcontent__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 35px;
-  max-width: 445px;
+  align-self: stretch;
+  flex: 1 1 25%;
+  gap: 25px;
+}
+
+.trade-tools-tabcontent__column:last-child {
+  align-self: end;
+  flex: 1 1 40%;
 }
 
 .trade-tools-tabcontent__bottom {
@@ -725,7 +738,6 @@ body {
 
 .trade-tools-tabcontent__item:before {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -739,13 +751,42 @@ body {
   font-size: 40px;
   color: #ea5504;
   line-height: 85%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 
 .trade-tools-tabcontent__subtitle {
   font-size: 18px;
   line-height: 122%;
+  margin-bottom: 5px;
+}
+
+.trade-tools-tabcontent__list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trade-tools-tabcontent__item-optimal {
+  position: relative;
+  padding-left: 13px;
+}
+
+.trade-tools-tabcontent__subtitle-optimal {
+  margin-bottom: 20px;
+}
+
+.trade-tools-tabcontent__item-optimal::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #74c6be;
+  display: inline-block;
 }
 
 .footer {
@@ -755,7 +796,7 @@ body {
 
 .footer__wrapper {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
