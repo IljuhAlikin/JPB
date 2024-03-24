@@ -764,7 +764,8 @@ body {
 .trade-tools-tabcontent__list-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
 }
 
 .trade-tools-tabcontent__item-optimal {
@@ -773,7 +774,7 @@ body {
 }
 
 .trade-tools-tabcontent__subtitle-optimal {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .trade-tools-tabcontent__item-optimal::before {
@@ -787,6 +788,13 @@ body {
   border-radius: 50%;
   background-color: #74c6be;
   display: inline-block;
+}
+
+.trade-tools-tabcontent__item-icon {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 .footer {

@@ -113,14 +113,14 @@
 .trade-tools-tabcontent__list-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 55px;
 }
 .trade-tools-tabcontent__item-optimal {
   position: relative;
   padding-left: 13px;
 }
 .trade-tools-tabcontent__subtitle-optimal {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 .trade-tools-tabcontent__item-optimal::before {
   content: "";
@@ -133,4 +133,10 @@
   border-radius: 50%;
   background-color: $light-blue;
   display: inline-block;
+}
+
+.trade-tools-tabcontent__item-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
