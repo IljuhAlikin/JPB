@@ -37,6 +37,11 @@
   font-size: 16px;
   color: $white;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header__link a:hover {
+  color: $yellow;
 }
 
 .header__controls {
@@ -72,4 +77,8 @@
   padding: 15px 20px;
   border-radius: 30px;
   display: block;
+  transition: all 0.3s ease;
+}
+.header__button:hover {
+  background: $yellow;
 }

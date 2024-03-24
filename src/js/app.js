@@ -4,13 +4,13 @@ flsFunctions.isWebp();
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get all tab buttons
-  var tabButtons = document.querySelectorAll(".tablink");
+  let tabButtons = document.querySelectorAll(".tablink");
 
   // Add event listener to each tab button
   tabButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       // Hide all tab content
-      var tabContents = document.querySelectorAll(".tabcontent");
+      let tabContents = document.querySelectorAll(".tabcontent");
       tabContents.forEach(function (content) {
         content.style.display = "none";
         content.classList.remove("active");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Show the specific tab content
-      var tabName = this.id.replace("tab", "section");
+      let tabName = this.id.replace("tab", "section");
       document.getElementById(tabName).style.display = "block";
       document.getElementById(tabName).classList.add("active");
 
