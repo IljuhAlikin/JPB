@@ -10,7 +10,7 @@
   display: flex;
   column-gap: 10px;
   justify-content: end;
-  transform: translateY(60px);
+  transform: translateY(40px);
 }
 
 .trade-tools-tablink {
@@ -30,10 +30,8 @@
   background-color: $orange;
 }
 
-/* Style the tab content */
 .trade-tools-tabcontent {
   display: none;
-  padding: 20px;
 }
 
 .trade-tools-tabcontent.active {
