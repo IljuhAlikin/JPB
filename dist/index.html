@@ -6,10 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240324133920"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240324145824"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240324133920" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240324145824" />
   <title>JPB</title>
 </head>
 
@@ -136,14 +136,31 @@
   <div class="available-platforms__container">
     <div class="available-platforms__wrapper">
       <div class="tabs">
-        <button class="tablink" id="tab1">Section 1</button>
-        <button class="tablink" id="tab2">Section 2</button>
-        <button class="tablink" id="tab3">Section 3</button>
+        <button class="tablink orange" id="tab1">PC/MAC</button>
+        <button class="tablink orange" id="tab2">MOBILE</button>
+        <button class="tablink orange" id="tab3">WEB TRADER</button>
       </div>
 
       <div id="section1" class="tabcontent active">
-        <h3>Section 1</h3>
-        <p>This is the content of section 1.</p>
+        <div class="tabs__wrapper">
+          <div class="tabs__column column-tabs__text">
+            <h3 class="section__title tabs__title orange">
+              cTrader для трейдеров и инвесторов по всему миру
+            </h3>
+            <p class="tabs__text">
+              Торгуйте или инвестируйте в более чем 8000 торговых инструментов,
+              включая пары Форекс, CFD на индексы, товары, криптовалюты, акции,
+              ETF и облигации, или покупайте акции или биржевые фонды. Доступно
+              как на Windows, так и на Mac.
+            </p>
+          </div>
+          <div class="tabs__column column-tabs__imgs">
+            <picture><source srcset="img/mac-and-pc.webp" type="image/webp"><img src="img/mac-and-pc.png" alt="" class="tabs__img" /></picture>
+          </div>
+        </div>
+        <div class="tabs__buttons">
+          <a href="#" class="tabs__button"> </a>
+        </div>
       </div>
 
       <div id="section2" class="tabcontent">
@@ -217,6 +234,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20240324133920"></script>
+    <script src="js/app.min.js?_v=20240324145824"></script>
   </body>
 </html>
