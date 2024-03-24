@@ -7,14 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240324192143"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240324221319"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240324192143"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240324221319"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240324192143" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240324221319" />
   <title>JPB</title>
 </head>
 
@@ -249,22 +249,26 @@
           <h4 class="trade-platform-bottom__title">
             Исполнение сделок по рыночным ценам в один клик
           </h4>
-          <div class="trade-platform-bottom__buttons">
+          <div class="link-wrapper">
             <a
               href="#"
-              class="trade-platform-bottom__button button-trade-platform"
+              class="trade-platform-bottom__button button-trade-platform link"
             >
-              <div class="button-trade-platform__text">WEB Терминал</div>
-              <div class="button-trade-platform__icon">
+              <div class="button-trade-platform__text link-text">
+                WEB Терминал
+              </div>
+              <div class="button-trade-platform__icon link-icon">
                 <i class="fas fa-arrow-right arrow"></i>
               </div>
             </a>
             <a
               href="#"
-              class="trade-platform-bottom__button button-trade-platform"
+              class="trade-platform-bottom__button button-trade-platform link"
             >
-              <div class="button-trade-platform__text">Скачать для WINDOWS</div>
-              <div class="button-trade-platform__icon">
+              <div class="button-trade-platform__text link-text">
+                Скачать для WINDOWS
+              </div>
+              <div class="button-trade-platform__icon link-icon">
                 <i class="fas fa-arrow-right arrow"></i>
               </div>
             </a>
@@ -277,23 +281,67 @@
 
           <section class="section trade-tools">
   <div class="trade-tools__container">
+    <h2 class="section__title trade-tools__title light-blue">
+      Торговые инструменты
+    </h2>
     <div class="trade-tools__wrapper">
       <div class="trade-tools__controls">
         <div class="trade-tools-tabs">
-          <button class="trade-tools-tablink" id="tradetab1">Section 1</button>
-          <button class="trade-tools-tablink" id="tradetab2">Section 2</button>
-          <button class="trade-tools-tablink" id="tradetab3">Section 3</button>
-          <button class="trade-tools-tablink" id="tradetab4">Section 4</button>
-          <button class="trade-tools-tablink" id="tradetab5">Section 5</button>
-          <button class="trade-tools-tablink" id="tradetab6">Section 6</button>
+          <button class="trade-tools-tablink active" id="tradetab1">Форекс</button>
+          <button class="trade-tools-tablink" id="tradetab2">Сырьевой рынок</button>
+          <button class="trade-tools-tablink" id="tradetab3">Индексы</button>
+          <button class="trade-tools-tablink" id="tradetab4">ETFs CFD</button>
+          <button class="trade-tools-tablink" id="tradetab5">Крипто</button>
+          <button class="trade-tools-tablink" id="tradetab6">CFD на Акции</button>
         </div>
       </div>
       <div class="trade-tools__content">
         <div id="tradesection1" class="trade-tools-tabcontent active">
-          <h3>Section 1</h3>
-          <p>This is the content of section 1.</p>
+          <div class="trade-tools-tabcontent__wrapper">
+            <div class="trade-tools-tabcontent__column">
+              <p>У вас есть доступ к финансовым инструментам в любое время и где бы вы не находились</p>
+              <ul class="trade-tools-tabcontent__list">
+                <li class="trade-tools-tabcontent__item">400 торговых инструментов</li>
+                <li class="trade-tools-tabcontent__item">11 типов</li>
+                <li class="trade-tools-tabcontent__item">Личный менеджер</li>
+              </ul>
+            </div>
+            <div class="trade-tools-tabcontent__column">
+              <div class="trade-tools-tabcontent__top">
+                <h5 class="trade-tools-tabcontent__title">Форекс</h5>
+                <p class="trade-tools-tabcontent__subtitle">Выбор большинства пользователей</p>
+              </div>
+             <div class="trade-tools-tabcontent__bottom">
+              <p>В вашем распоряжении самый широкий выбор инструментов для торговли</p>
+              <div class="link-wrapper">
+                <a
+                href="#"
+                class="link"
+              >
+                <div class="link-text">
+                  Все инструменты
+                </div>
+                <div class="link-icon">
+                  <i class="fas fa-arrow-right arrow"></i>
+                </div>
+              </a>
+              
+                <a
+                href="#"
+                class="link"
+              >
+                <div class="link-text">
+                  Начать торговать
+                </div>
+                <div class="link-icon">
+                  <i class="fas fa-arrow-right arrow"></i>
+                </div>
+              </a>
+              </div>
+             </div>
+            </div>
+          </div>
         </div>
-
         <div id="tradesection2" class="trade-tools-tabcontent">
           <h3>Section 2</h3>
           <p>This is the content of section 2.</p>
@@ -379,6 +427,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20240324192143"></script>
+    <script src="js/app.min.js?_v=20240324221319"></script>
   </body>
 </html>

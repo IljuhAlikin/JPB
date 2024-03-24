@@ -1,17 +1,27 @@
+.trade-tools {
+  margin-bottom: 185px;
+}
+
 .trade-tools-tabs {
   display: flex;
+  column-gap: 10px;
 }
 
 .trade-tools-tablink {
-  padding: 10px 20px;
-  background-color: #f2f2f2;
+  padding: 10px 15px;
+  background-color: $light-blue;
+  border-radius: 30px;
+  color: $white;
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 300;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .trade-tools-tablink.active {
-  background-color: #ccc;
+  background-color: $orange;
 }
 
 /* Style the tab content */
@@ -32,4 +42,70 @@
   to {
     opacity: 1;
   }
+}
+
+.trade-tools-tabcontent__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.trade-tools-tabcontent__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 35px;
+  max-width: 445px;
+}
+
+.trade-tools-tabcontent__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.trade-tools-tabcontent__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.trade-tools-tabcontent__item {
+  position: relative;
+  padding-left: 55px;
+}
+.trade-tools-tabcontent__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../img/check.svg") no-repeat;
+  display: inline-block;
+}
+
+.trade-tools-tabcontent__title {
+  font-size: 40px;
+  color: $orange;
+  line-height: 85%;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.trade-tools-tabcontent__subtitle {
+  font-size: 18px;
+  line-height: 122%;
+}
+.link-wrapper {
+}
+.link {
+}
+.link-text {
+}
+.link-icon {
+}
+.fas {
+}
+.fa-arrow-right {
+}
+.arrow {
 }

@@ -100,7 +100,7 @@
   align-self: stretch;
 }
 
-.trade-platform-bottom__buttons {
+.link-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,28 +111,6 @@
   max-width: 590px;
   font-weight: 300;
   font-size: 34px;
-}
-
-.button-trade-platform__icon {
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $orange;
-}
-
-.button-trade-platform {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.button-trade-platform__text {
-  font-size: 18px;
-  color: $black;
 }
 
 .arrow {
