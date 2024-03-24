@@ -82,6 +82,23 @@
   position: relative;
 }
 
+.tabs__text-down {
+  display: flex;
+  align-items: center;
+}
+
+.tabs__buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.tabs-install {
+  font-size: 18px;
+  line-height: 122%;
+}
+
 .tabs__button {
   width: 48px;
   height: 48px;
