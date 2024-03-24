@@ -52,6 +52,7 @@ html {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -62,10 +63,6 @@ body {
   font-family: "Inter";
   color: #191919;
   font-size: 24px;
-}
-
-body {
-  font-family: "FontAwesome", sans-serif;
 }
 
 .wrapper {
@@ -102,6 +99,7 @@ body {
   position: relative;
   width: 29px;
   height: 17px;
+  cursor: pointer;
 }
 
 .switch-checkbox input {
@@ -525,6 +523,86 @@ body {
 .tabs__button svg {
   max-width: 18px;
   color: #ea5504 !important;
+}
+
+.trade-platform {
+  margin-bottom: 135px;
+}
+
+.trade-platform-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.trade-platform-top__wrapper {
+  display: flex;
+  align-items: start;
+}
+
+.top-column-trade {
+  flex: 0 1 420px;
+}
+
+.top-column-trade:last-child {
+  margin-left: 160px;
+}
+
+.top-column-trade__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-column-trade__main-text {
+  margin-bottom: 25px;
+  max-width: 430px;
+}
+
+.top-column-trade__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.list-top-column-trade__item {
+  font-size: 18px;
+  line-height: 122%;
+}
+
+.trade-platform-bottom__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-trade-platform__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.info-trade-platform__item {
+  flex: 0 1 320px;
+}
+
+.info-trade-platform__title {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: #ea5504;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 30px;
+  line-height: 122%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.info-trade-platform__text {
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 300;
 }
 
 .footer {

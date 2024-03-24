@@ -13,6 +13,7 @@ body,
 html {
   height: 100%;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -23,10 +24,6 @@ body {
   font-family: "Inter";
   color: $black;
   font-size: 24px;
-}
-
-body {
-  font-family: "FontAwesome", sans-serif;
 }
 
 .wrapper {
@@ -63,6 +60,7 @@ body {
   position: relative;
   width: 29px;
   height: 17px;
+  cursor: pointer;
 }
 
 .switch-checkbox input {
@@ -108,6 +106,8 @@ body {
 @import "convenient-platform.scss";
 
 @import "available-platforms.scss";
+
+@import "trade-platform.scss";
 
 @import "footer.scss";
 
