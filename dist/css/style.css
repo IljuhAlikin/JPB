@@ -572,14 +572,16 @@ body {
 
 .trade-platform-bottom__wrapper {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .info-trade-platform__wrapper {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .info-trade-platform__item {
@@ -603,6 +605,15 @@ body {
   font-size: 18px;
   line-height: 122%;
   font-weight: 300;
+}
+
+.trade-platform-bottom__column {
+  flex: 1 1 25%;
+}
+
+.trade-platform-bottom__title {
+  flex: 1 1 50%;
+  max-width: 500px;
 }
 
 .footer {
