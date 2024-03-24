@@ -64,6 +64,10 @@ body {
   font-size: 24px;
 }
 
+body {
+  font-family: "FontAwesome", sans-serif;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -163,8 +167,6 @@ body {
 .header__menu {
   display: flex;
   align-items: center;
-  -moz-column-gap: 105px;
-       column-gap: 105px;
   row-gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -475,12 +477,37 @@ body {
   position: relative;
 }
 
+.tabs__button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ea5504;
+}
+
+.tabs__button a {
+  display: block;
+}
+
+.tabs__button i {
+  display: block;
+  color: #ea5504;
+}
+
 .tabs__img:not(:last-child) {
   position: absolute;
 }
 
 .tabs__img:first-child {
   position: relative !important;
+}
+
+.tabs__button svg {
+  max-width: 18px;
+  color: #ea5504 !important;
 }
 
 .footer {
