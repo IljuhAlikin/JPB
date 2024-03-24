@@ -111,6 +111,8 @@ body {
 
 @import "trade-tools.scss";
 
+@import "platform-for.scss";
+
 @import "footer.scss";
 
 .link-icon {
@@ -132,6 +134,7 @@ body {
 
 .link-text {
   font-size: 18px;
+  text-transform: uppercase;
   color: $black;
 }
 
