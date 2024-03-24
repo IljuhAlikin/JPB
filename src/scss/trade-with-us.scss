@@ -1,5 +1,7 @@
 .trade-with-us {
   padding-top: 240px;
+  background: $black;
+  padding-bottom: 315px;
 }
 .trade-with-us__wrapper {
   display: flex;
@@ -15,7 +17,11 @@
 .trade-with-us__title {
   font-size: 65px;
   margin-bottom: 40px;
-  color: #fff;
+  color: $white;
+}
+
+.trade-with-us__title span {
+  color: $blue;
 }
 
 .text-trade-with-us {
@@ -28,6 +34,8 @@
 .text-trade-with-us__item {
   line-height: 122%;
   font-size: 30px;
+  color: $white;
+  font-weight: 100;
 }
 
 .text-trade-with-us__item:first-child {

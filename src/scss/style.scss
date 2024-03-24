@@ -2,6 +2,12 @@
 
 @import "fonts.scss";
 
+$blue: #00f0ff;
+$light-blue: #74c6be;
+$black: #191919;
+$white: #fff;
+$yellow: #fabe00;
+
 body,
 html {
   height: 100%;
@@ -13,7 +19,7 @@ a {
 
 body {
   font-family: "Inter";
-  color: #333;
+  color: $black;
   font-size: 24px;
 }
 
@@ -67,11 +73,11 @@ body {
   height: 100%;
   background: none;
   border-radius: 9px;
-  border: 3px solid #74c6be;
+  border: 3px solid $blue;
   transition: 0.5s;
 }
 .switch-checkbox input:checked ~ span {
-  // background: #74c6be;
+  // background: $light-blue;
 }
 
 .switch-checkbox span i {
@@ -80,7 +86,7 @@ body {
   height: 13px;
   top: -1px;
   border-radius: 50%;
-  background-color: #fabe00;
+  background-color: $blue;
 }
 .switch-checkbox input:checked ~ span i {
   left: 11px;
