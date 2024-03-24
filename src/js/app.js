@@ -5,6 +5,7 @@ flsFunctions.isWebp();
 document.addEventListener("DOMContentLoaded", function () {
   // Get all tab buttons
   let tabButtons = document.querySelectorAll(".tablink");
+  let tradeTabButtons = document.querySelectorAll(".trade-tools-tablink");
 
   // Add event listener to each tab button
   tabButtons.forEach(function (button) {
@@ -23,6 +24,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Show the specific tab content
       let tabName = this.id.replace("tab", "section");
+      document.getElementById(tabName).style.display = "block";
+      document.getElementById(tabName).classList.add("active");
+
+      // Activate the button that opened the tab
+      this.classList.add("active");
+    });
+  });
+
+  // Get all tab buttons
+
+  // Add event listener to each tab button
+  tradeTabButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Hide all tab content
+      let tabContents = document.querySelectorAll(".trade-tools-tabcontent");
+      tabContents.forEach(function (content) {
+        content.style.display = "none";
+        content.classList.remove("active");
+      });
+
+      // Deactivate all tab links
+      tradeTabButtons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      // Show the specific tab content
+      let tabName = this.id.replace("tradetab", "tradesection");
       document.getElementById(tabName).style.display = "block";
       document.getElementById(tabName).classList.add("active");
 
