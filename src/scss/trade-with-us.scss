@@ -1,7 +1,9 @@
 .trade-with-us {
-  padding-top: 240px;
+  padding-top: 180px;
   background: $black;
-  padding-bottom: 315px;
+  padding-bottom: 285px;
+  // margin-top: 50px;
+  margin-bottom: 40px;
 }
 .trade-with-us__wrapper {
   display: flex;
@@ -70,4 +72,24 @@
 .img-area__img {
   position: relative;
   z-index: 1;
+}
+
+.trade-with-us__button-section {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 625px;
+}
+.trade-with-us__button {
+  display: inline-block;
+  color: $black;
+  background: $blue;
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }

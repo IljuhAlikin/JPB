@@ -1,16 +1,13 @@
-.section {
-}
 .convenient-platform {
+  // margin-top: 130px;
+  margin-bottom: 130px;
 }
-.convenient-platform__container {
-}
+
 .convenient-platform__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-}
-.convenient-platform__column {
 }
 
 .convenient-platform__text {
@@ -23,8 +20,6 @@
 
 .convenient-platform__title {
   margin-bottom: 40px;
-}
-.convenient-platform__text {
 }
 
 .convenient-platform__ctrade {

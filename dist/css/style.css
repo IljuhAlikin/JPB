@@ -231,9 +231,10 @@ body {
 }
 
 .trade-with-us {
-  padding-top: 240px;
+  padding-top: 180px;
   background: #191919;
-  padding-bottom: 315px;
+  padding-bottom: 285px;
+  margin-bottom: 40px;
 }
 
 .trade-with-us__wrapper {
@@ -306,6 +307,31 @@ body {
   z-index: 1;
 }
 
+.trade-with-us__button-section {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 625px;
+}
+
+.trade-with-us__button {
+  display: inline-block;
+  color: #191919;
+  background: #00f0ff;
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.convenient-platform {
+  margin-bottom: 130px;
+}
+
 .convenient-platform__wrapper {
   display: flex;
   justify-content: space-between;
@@ -373,6 +399,16 @@ body {
   transform: translateX(30px);
 }
 
+.available-platforms {
+  margin-bottom: 170px;
+}
+
+.available-platforms__wrapper {
+  border: 1px solid #ea5504;
+  border-radius: 30px;
+  padding: 50px 5px 100px 45px;
+}
+
 .tabs {
   display: flex;
 }
@@ -388,8 +424,6 @@ body {
 .tablink.active {
   background-color: #ccc;
 }
-
-/* Style the tab content */
 
 .tabcontent {
   display: none;
