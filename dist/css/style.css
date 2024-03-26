@@ -225,18 +225,6 @@ body {
   background: #fabe00;
 }
 
-.section {
-  margin-bottom: 150px;
-}
-
-.section__title {
-  color: #74c6be;
-  font-size: 60px;
-  line-height: 85%;
-  font-weight: 700;
-  margin-bottom: 80px;
-}
-
 .trade-with-us {
   padding-top: 180px;
   background: #191919;
@@ -967,6 +955,16 @@ body {
   align-self: stretch;
 }
 
+.column-best-partnership__button {
+  padding: 10px;
+  display: inline-block;
+  max-width: 425px;
+  color: #fff;
+  text-align: center;
+  background: #ea5504;
+  border-radius: 30px;
+}
+
 .column-best-partnership-img {
   display: flex;
   flex-direction: column;
@@ -1037,6 +1035,28 @@ body {
   max-width: 584px;
 }
 
+.section {
+  margin-bottom: 150px;
+}
+
+.large-text {
+  font-size: 30px;
+  line-height: 122%;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 122%;
+}
+
+.section__title {
+  color: #74c6be;
+  font-size: 60px;
+  line-height: 85%;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
 .link-icon {
   border-radius: 50%;
   width: 45px;
@@ -1058,11 +1078,6 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: #191919;
-}
-
-.description {
-  font-size: 18px;
-  line-height: 122%;
 }
 
 .orange {

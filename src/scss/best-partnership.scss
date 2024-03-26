@@ -31,6 +31,13 @@
 .column-best-partnership__title {
 }
 .column-best-partnership__button {
+  padding: 10px;
+  display: inline-block;
+  max-width: 425px;
+  color: $white;
+  text-align: center;
+  background: $orange;
+  border-radius: 30px;
 }
 
 .column-best-partnership-img {
