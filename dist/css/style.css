@@ -225,6 +225,27 @@ body {
   background: #fabe00;
 }
 
+.section {
+  margin-bottom: 150px;
+}
+
+.large-text {
+  font-size: 30px;
+  line-height: 122%;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 122%;
+}
+
+.section__title {
+  font-size: 60px;
+  line-height: 85%;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
 .trade-with-us {
   padding-top: 180px;
   background: #191919;
@@ -976,6 +997,54 @@ body {
   max-width: 379px;
 }
 
+.new-level {
+  position: relative;
+  padding-top: 50px;
+}
+
+.new-level__wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.new-level__title {
+  margin: 0;
+}
+
+.new-level__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-block__text {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.block__text {
+  display: none;
+}
+
+.arrow-spoiler {
+  transform: none;
+}
+
 .footer {
   background: #191919;
   padding: 70px 0px 130px 0px;
@@ -1033,28 +1102,6 @@ body {
   line-height: 122%;
   font-size: 16px;
   max-width: 584px;
-}
-
-.section {
-  margin-bottom: 150px;
-}
-
-.large-text {
-  font-size: 30px;
-  line-height: 122%;
-}
-
-.description {
-  font-size: 18px;
-  line-height: 122%;
-}
-
-.section__title {
-  color: #74c6be;
-  font-size: 60px;
-  line-height: 85%;
-  font-weight: 700;
-  margin-bottom: 80px;
 }
 
 .link-icon {

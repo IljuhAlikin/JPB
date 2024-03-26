@@ -58,4 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
     });
   });
+
+  // const accordionItems = document.querySelectorAll(".block__top");
+
+  // accordionItems.forEach((item) => {
+  //   const button = item.querySelector(".accordion-button");
+  //   const content = item.querySelector(".top-block__title");
+  //   const arrow = button.querySelector(".top-block__arrow");
+
+  //   button.addEventListener("click", () => {
+  //     content.classList.toggle("accordion-content-active");
+  //     arrow.classList.toggle("rotate");
+  //     console.log("asdasds");
+  //   });
+  // });
 });
