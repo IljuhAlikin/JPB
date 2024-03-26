@@ -17,9 +17,11 @@
 }
 
 .trade-with-us__title {
-  font-size: 65px;
+  font-size: clamp(26px, 6vw, 65px); // 65px;
   margin-bottom: 40px;
   color: $white;
+  line-height: 122%;
+  font-weight: 700;
 }
 
 .trade-with-us__title span {
@@ -34,8 +36,6 @@
 }
 
 .text-trade-with-us__item {
-  line-height: 122%;
-  font-size: 30px;
   color: $white;
   font-weight: 100;
 }
@@ -92,4 +92,20 @@
   padding: 15px 20px;
   border-radius: 30px;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 1441px) {
+  .text-trade-with-us {
+    row-gap: 30px;
+  }
+
+  .trade-with-us {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .trade-with-us {
+    padding-top: 120px;
+  }
 }

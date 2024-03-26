@@ -100,8 +100,6 @@ body {
 
 @import "header.scss";
 
-@import "sections.scss";
-
 @import "trade-with-us.scss";
 
 @import "convenient-platform.scss";
@@ -121,6 +119,8 @@ body {
 @import "new-level.scss";
 
 @import "footer.scss";
+
+@import "sections.scss";
 
 .link-icon {
   border-radius: 50%;

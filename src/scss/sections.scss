@@ -3,7 +3,11 @@
 }
 
 .large-text {
-  font-size: 30px;
+  font-size: clamp(16px, 2.5vw, 30px);
+  line-height: 122%;
+}
+
+.normal-text {
   line-height: 122%;
 }
 
