@@ -19,21 +19,38 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background: url("../img/check.svg") no-repeat;
+  background: url("../img/check-orange.svg") no-repeat;
   display: inline-block;
 }
 .platform-for__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .platform-for__description {
   margin-bottom: 30px;
   max-width: 790px;
 }
+
 .platform-for__column:first-child {
   flex: 1 1 60%;
+}
+
+.platform-for__bg {
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: block;
+  top: -20%;
+  right: 0;
+  z-index: 0;
+}
+
+.platform-for__img {
+  position: relative;
+  z-index: 1;
 }
 
 .platform-for__column:last-child {

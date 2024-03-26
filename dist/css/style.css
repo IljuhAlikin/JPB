@@ -820,7 +820,7 @@ body {
   left: 0;
   width: 30px;
   height: 30px;
-  background: url("../img/check.svg") no-repeat;
+  background: url("../img/check-orange.svg") no-repeat;
   display: inline-block;
 }
 
@@ -828,6 +828,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .platform-for__description {
@@ -837,6 +838,21 @@ body {
 
 .platform-for__column:first-child {
   flex: 1 1 60%;
+}
+
+.platform-for__bg {
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: block;
+  top: -20%;
+  right: 0;
+  z-index: 0;
+}
+
+.platform-for__img {
+  position: relative;
+  z-index: 1;
 }
 
 .platform-for__column:last-child {
@@ -877,6 +893,27 @@ body {
   justify-content: start;
   -moz-column-gap: 55px;
        column-gap: 55px;
+}
+
+.advantages {
+  margin-bottom: 175px;
+}
+
+.advantages__subtitle {
+  max-width: 940px;
+  margin-bottom: 20px;
+}
+
+.column-advantages__item {
+  border: 1px solid #fabe00;
+  border-radius: 30px;
+  padding: 50px 30px;
+}
+
+.item-column-advantages__img {
+  background-color: #74c6be;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .footer {
