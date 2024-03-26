@@ -4,6 +4,7 @@
 
 $blue: #00f0ff;
 $light-blue: #74c6be;
+$dark-blue: #1d77d5;
 $black: #191919;
 $white: #fff;
 $yellow: #fabe00;
@@ -152,4 +153,11 @@ body {
 
 .light-blue {
   color: $light-blue;
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+.dark-blue_bg {
+  background-color: $dark-blue;
 }

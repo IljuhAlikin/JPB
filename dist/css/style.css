@@ -676,7 +676,7 @@ body {
 }
 
 .trade-tools-tablink.active {
-  background-color: #ea5504;
+  background-color: #1d77d5;
 }
 
 .trade-tools-tabcontent {
@@ -975,4 +975,12 @@ body {
 
 .light-blue {
   color: #74c6be;
+}
+
+.dark-blue {
+  color: #1d77d5;
+}
+
+.dark-blue_bg {
+  background-color: #1d77d5;
 }
