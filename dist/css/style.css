@@ -225,6 +225,10 @@ body {
   background: #fabe00;
 }
 
+.section {
+  margin-bottom: 150px;
+}
+
 .section__title {
   color: #74c6be;
   font-size: 60px;
@@ -400,10 +404,6 @@ body {
 
 .convenient-platform__img:first-child {
   transform: translateX(30px);
-}
-
-.available-platforms {
-  margin-bottom: 170px;
 }
 
 .available-platforms__wrapper {
@@ -646,10 +646,6 @@ body {
   font-size: 15px;
 }
 
-.trade-tools {
-  margin-bottom: 185px;
-}
-
 .trade-tools__title {
   margin-bottom: 40px;
 }
@@ -797,10 +793,6 @@ body {
        column-gap: 5px;
 }
 
-.platform-for {
-  margin-bottom: 175px;
-}
-
 .options-for {
   display: flex;
   -moz-column-gap: 45px;
@@ -895,10 +887,6 @@ body {
        column-gap: 55px;
 }
 
-.advantages {
-  margin-bottom: 175px;
-}
-
 .advantages__subtitle {
   max-width: 940px;
   margin-bottom: 20px;
@@ -963,6 +951,31 @@ body {
 
 .item-column-advantages__title span {
   display: block;
+}
+
+.best-partnership__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.best-partnership__column {
+  flex: 1 1 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.column-best-partnership-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-best-partnership-img img {
+  max-width: 379px;
 }
 
 .footer {
@@ -1045,6 +1058,11 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: #191919;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 122%;
 }
 
 .orange {

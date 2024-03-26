@@ -1,0 +1,44 @@
+.section {
+}
+.best-partnership {
+}
+.best-partnership__container {
+}
+.section__title {
+}
+.best-partnership__title {
+}
+.orange {
+}
+.best-partnership__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.best-partnership__column {
+  flex: 1 1 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+}
+.column-best-partnership {
+}
+.column-best-partnership__main-text {
+}
+.column-best-partnership__description {
+}
+.column-best-partnership__title {
+}
+.column-best-partnership__button {
+}
+
+.column-best-partnership-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.column-best-partnership-img img {
+  max-width: 379px;
+}
