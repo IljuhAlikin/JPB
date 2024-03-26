@@ -544,10 +544,6 @@ body {
   flex: 0 1 420px;
 }
 
-.top-column-trade:last-child {
-  margin-left: 160px;
-}
-
 .top-column-trade__wrapper {
   display: flex;
   align-items: center;
@@ -572,7 +568,7 @@ body {
 
 .trade-platform-bottom__wrapper {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   gap: 25px;
 }
@@ -622,6 +618,13 @@ body {
   flex: 1 1 25%;
   flex-basis: 100%;
   align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.trade-platform-bottom__column_center {
+  align-self: center;
 }
 
 .link-wrapper {
