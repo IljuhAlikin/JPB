@@ -33,7 +33,7 @@
 .header__link a {
   font-weight: 300;
   line-height: 13.6px;
-  font-size: 16px;
+  font-size: clamp(10px, 1.2vw, 16px);
   color: $white;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -80,4 +80,51 @@
 }
 .header__button:hover {
   background: $yellow;
+}
+
+@media (max-width: 991px) {
+  .header {
+    height: 70px;
+  }
+
+  .header__logo img {
+    max-height: 45px;
+  }
+
+  .header__button {
+    padding: 12px 15px;
+  }
+  .language-header__link {
+    font-size: 20px;
+  }
+
+  .trade-with-us__wrapper {
+    // flex-direction: column;
+  }
+  .trade-with-us__button {
+    font-size: 16px;
+  }
+
+  .text-trade-with-us {
+    row-gap: 20px;
+  }
+
+  .img-area__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .trade-with-us__column {
+    // flex: 1 1 100%;
+  }
+
+  .trade-with-us__column img {
+  }
+
+  .img-area {
+  }
+
+  .img-area {
+  }
 }

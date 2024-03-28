@@ -173,7 +173,7 @@ body {
 .header__link a {
   font-weight: 300;
   line-height: 13.6px;
-  font-size: 16px;
+  font-size: clamp(10px, 1.2vw, 16px);
   color: #fff;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -312,6 +312,7 @@ body {
 
 .trade-with-us__button {
   display: inline-block;
+  text-align: center;
   color: #191919;
   background: #00f0ff;
   font-size: 18px;
@@ -1168,5 +1169,37 @@ body {
 @media (max-width: 1025px) {
   .trade-with-us {
     padding-top: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    height: 70px;
+  }
+
+  .header__logo img {
+    max-height: 45px;
+  }
+
+  .header__button {
+    padding: 12px 15px;
+  }
+
+  .language-header__link {
+    font-size: 20px;
+  }
+
+  .trade-with-us__button {
+    font-size: 16px;
+  }
+
+  .text-trade-with-us {
+    row-gap: 20px;
+  }
+
+  .img-area__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
