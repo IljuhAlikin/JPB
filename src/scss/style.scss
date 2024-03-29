@@ -27,6 +27,10 @@ body {
   font-size: 24px;
 }
 
+body.lock {
+  overflow-y: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
