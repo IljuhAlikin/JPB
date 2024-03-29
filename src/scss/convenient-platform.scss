@@ -66,3 +66,8 @@
 .convenient-platform__img:first-child {
   transform: translateX(30px);
 }
+
+@media (max-width: 1441px) {
+  .convenient-platform__wrapper-img {
+  }
+}

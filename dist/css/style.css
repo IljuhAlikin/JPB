@@ -1110,7 +1110,7 @@ body.lock {
 }
 
 .section__title {
-  font-size: 60px;
+  font-size: clamp(24px, 6vw, 60px);
   line-height: 85%;
   font-weight: 700;
   margin-bottom: 80px;
