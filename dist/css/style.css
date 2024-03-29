@@ -240,7 +240,6 @@ body {
 }
 
 .trade-with-us__column {
-  position: relative;
   z-index: 1;
 }
 
@@ -1172,7 +1171,7 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .header {
     height: 70px;
   }
@@ -1183,6 +1182,7 @@ body {
 
   .header__button {
     padding: 12px 15px;
+    font-size: 16px;
   }
 
   .language-header__link {
@@ -1197,9 +1197,34 @@ body {
     row-gap: 20px;
   }
 
+  .trade-with-us__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .img-area__wrapper {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .trade-with-us__button-section {
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0px 100px;
+    bottom: -80px;
+  }
+
+  .text-trade-with-us {
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .trade-with-us__title,
+  .text-trade-with-us__item {
+    text-align: center;
+    max-width: 100%;
   }
 }
