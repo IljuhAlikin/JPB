@@ -228,3 +228,9 @@
     top: 28px;
   }
 }
+
+@media (max-width: 576px) {
+  .header::after {
+    display: none;
+  }
+}

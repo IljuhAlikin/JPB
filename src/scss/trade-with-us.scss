@@ -87,7 +87,7 @@
   background: $blue;
   font-size: 18px;
   line-height: 122%;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 15px 20px;
   border-radius: 30px;
@@ -125,16 +125,18 @@
 
   .img-area__wrapper {
     position: relative;
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
   }
 
   .trade-with-us__button-section {
     position: absolute;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     max-width: none;
+    width: 100%;
     margin: 0 auto;
-    padding: 0px 100px;
     bottom: -80px;
   }
 
@@ -154,4 +156,37 @@
 }
 
 @media (max-width: 768px) {
+  .trade-with-us__wrapper {
+    padding-top: 0px;
+  }
+  .trade-with-us {
+    padding-top: 100px;
+  }
+  .trade-with-us__button-section {
+    bottom: -140px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .trade-with-us__button {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .trade-with-us__button-section {
+    gap: 10px;
+  }
+  .trade-with-us__button {
+    font-size: 14px;
+  }
+  .trade-with-us__title {
+    margin-bottom: 20px;
+  }
+  .text-trade-with-us {
+    gap: 10px;
+  }
+  .img-area__wrapper {
+    max-width: 72%;
+  }
 }
