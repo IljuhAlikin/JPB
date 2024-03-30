@@ -3,11 +3,12 @@
 }
 
 .large-text {
-  font-size: clamp(16px, 2.5vw, 30px);
+  font-size: clamp(16px, 2.2vw, 30px);
   line-height: 122%;
 }
 
 .normal-text {
+  font-size: clamp(16px, 1.8vw, 24px);
   line-height: 122%;
 }
 
@@ -17,8 +18,7 @@
 }
 
 .section__title {
-  // font-family: "Norwesterg", sans-serif;
-  font-size: clamp(24px, 6vw, 60px);
+  font-size: clamp(24px, 5vw, 60px);
   line-height: 85%;
   font-weight: 700;
   margin-bottom: 80px;
