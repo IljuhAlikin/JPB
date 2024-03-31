@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   swiperButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default link behavior
       swiper.slideTo(index);
     });
   });
@@ -73,9 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tradeToolsSwiper = new Swiper(".trade-instruments__swiper", {
     loop: false,
-    autoplay: {
-      disableOnInteraction: true,
-    },
+
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -111,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Add event listener to swiper's slideChange event
   tradeToolsSwiper.on("slideChange", () => {
     const activeIndex = tradeToolsSwiper.realIndex;
     updateActiveTabLink(activeIndex);
