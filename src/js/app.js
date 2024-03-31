@@ -3,49 +3,6 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
 document.addEventListener("DOMContentLoaded", function () {
-  let tabButtons = document.querySelectorAll(".tablink");
-  let tradeTabButtons = document.querySelectorAll(".trade-tools-tablink");
-
-  // tabButtons.forEach(function (button) {
-  //   button.addEventListener("click", function () {
-  //     let tabContents = document.querySelectorAll(".tabcontent");
-  //     tabContents.forEach(function (content) {
-  //       content.style.display = "none";
-  //       content.classList.remove("active");
-  //     });
-
-  //     tabButtons.forEach(function (btn) {
-  //       btn.classList.remove("active");
-  //     });
-
-  //     let tabName = this.id.replace("tab", "section");
-  //     document.getElementById(tabName).style.display = "block";
-  //     document.getElementById(tabName).classList.add("active");
-
-  //     this.classList.add("active");
-  //   });
-  // });
-
-  tradeTabButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      let tabContents = document.querySelectorAll(".trade-tools-tabcontent");
-      tabContents.forEach(function (content) {
-        content.style.display = "none";
-        content.classList.remove("active");
-      });
-
-      tradeTabButtons.forEach(function (btn) {
-        btn.classList.remove("active");
-      });
-
-      let tabName = this.id.replace("tradetab", "tradesection");
-      document.getElementById(tabName).style.display = "block";
-      document.getElementById(tabName).classList.add("active");
-
-      this.classList.add("active");
-    });
-  });
-
   let burger = document.getElementById("burger");
 
   burger.addEventListener("click", function () {
@@ -58,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(".swiper", {
     loop: false,
-    pagination: {
-      el: ".swiper-pagination",
-    },
     autoplay: {
       delay: 3000,
       disableOnInteraction: true,
@@ -116,4 +70,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateActiveTabButtonColor(swiper.realIndex);
   updateActiveWrapperColor(swiper.realIndex);
+
+  const tradeToolsSwiper = new Swiper(".trade-instruments__swiper", {
+    loop: false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+
+  const tabLinks = document.querySelectorAll(".trade-tools-tablink");
+
+  // Function to update active tab link
+  function updateActiveTabLink(activeIndex) {
+    tabLinks.forEach((link, index) => {
+      if (index === activeIndex) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  tabLinks.forEach((link, index) => {
+    link.addEventListener("click", () => {
+      tradeToolsSwiper.slideTo(index); // Slide to corresponding index
+    });
+  });
+
+  tradeToolsSwiper.on("slideChange", () => {
+    const activeIndex = tradeToolsSwiper.realIndex;
+    updateActiveTabLink(activeIndex);
+  });
+
+  // Initialize active tab link
+  updateActiveTabLink(tradeToolsSwiper.realIndex);
 });

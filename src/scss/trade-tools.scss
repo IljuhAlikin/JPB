@@ -1,15 +1,24 @@
 .trade-tools {
- }
+}
 
 .trade-tools__title {
   margin-bottom: 40px;
+}
+
+.trade-tools__wrapper {
+  position: relative;
+  gap: 20px;
 }
 
 .trade-tools-tabs {
   display: flex;
   column-gap: 10px;
   justify-content: end;
-  transform: translateY(40px);
+  // position: relative;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  z-index: 2;
 }
 
 .trade-tools-tablink {
@@ -57,15 +66,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  //   max-width: 445px;
   align-self: stretch;
-  flex: 1 1 25%;
   gap: 25px;
+}
+
+.trade-tools-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 0 1 390px;
 }
 
 .trade-tools-tabcontent__column:last-child {
   align-self: end;
-  flex: 1 1 40%;
+  min-width: 760px;
+}
+
+.trade-tools-link-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .trade-tools-tabcontent__bottom {
@@ -118,6 +138,7 @@
 }
 .trade-tools-tabcontent__subtitle-optimal {
   margin-bottom: 11px;
+  font-size: 18px;
 }
 .trade-tools-tabcontent__item-optimal::before {
   content: "";
@@ -136,4 +157,60 @@
   display: flex;
   align-items: center;
   column-gap: 5px;
+}
+
+.trade-tools__wrapper {
+  display: flex;
+  align-items: start;
+}
+
+@media (max-width: 1720px) {
+  .swiper-wrapper {
+    max-width: 100%;
+  }
+  .trade-tools-tabcontent__column:last-child {
+    min-width: 0px;
+  }
+  .trade-tools-tabs {
+    position: relative;
+  }
+  .trade-tools__wrapper {
+    flex-direction: column;
+  }
+
+  .trade-instruments__swiper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1441px) {
+  .trade-tools-content {
+    flex: 1 1 auto;
+  }
+  .trade-instruments__swiper {
+    width: 100%;
+  }
+  .trade-tools-tabcontent__wrapper {
+    max-width: 100%;
+    width: 100% !important;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .trade-tools-tabcontent__column:last-child {
+    align-self: start;
+  }
+  .trade-tools-tabcontent__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .trade-tools-tabcontent__column {
+  }
+}
+
+@media (max-width: 992px) {
+  .trade-tools-tabs {
+    // width: 900px;
+    // overflow-x: auto;
+  }
 }
