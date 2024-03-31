@@ -235,7 +235,8 @@
 }
 
 @media (max-width: 768px) {
-  .trade-tools-tabcontent__item:before {
+  .trade-tools-tabcontent__item:before,
+  .options-for__item::before {
     background-size: 20px 20px;
   }
   .trade-tools-tabcontent__item {
