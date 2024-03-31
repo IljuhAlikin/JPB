@@ -784,7 +784,7 @@ body.lock {
 }
 
 .trade-tools-tabcontent__title {
-  font-size: 40px;
+  font-size: clamp(20px, 2vw, 40px);
   color: #ea5504;
   line-height: 85%;
   margin-bottom: 20px;
@@ -1859,10 +1859,6 @@ body.lock {
   }
 
   .trade-tools-tabs-container {
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    overflow-y: hidden;
-    /* Hide vertical scrollbar */
     white-space: nowrap;
     /* Prevent buttons from wrapping */
     -webkit-overflow-scrolling: touch;
@@ -1995,6 +1991,11 @@ body.lock {
     flex-direction: column;
   }
 
+  .trade-tools-link-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .footer {
     padding: 55px 0px 50px 0px;
   }
@@ -2018,5 +2019,14 @@ body.lock {
     max-width: none;
     width: 100%;
     align-self: center;
+  }
+
+  .link-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrow {
+    font-size: 7px;
   }
 }

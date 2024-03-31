@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const tradeToolsSwiper = new Swiper(".trade-instruments__swiper", {
     loop: false,
     autoplay: {
-      delay: 3000,
       disableOnInteraction: true,
     },
     effect: "fade",
@@ -85,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tabLinks = document.querySelectorAll(".trade-tools-tablink");
 
-  // Function to update active tab link
   function updateActiveTabLink(activeIndex) {
     tabLinks.forEach((link, index) => {
       if (index === activeIndex) {
@@ -96,20 +94,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function scrollToActiveTab() {
+    const activeIndex = tradeToolsSwiper.realIndex;
+    const activeTab = tabLinks[activeIndex];
+    activeTab.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  }
+
   tabLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
       tradeToolsSwiper.slideTo(index);
-      // link.scrollIntoView({
-      //   behavior: "smooth",
-      //   block: "nearest",
-      //   inline: "center",
-      // }); // Slide to corresponding index
+      scrollToActiveTab();
     });
   });
 
+  // Add event listener to swiper's slideChange event
   tradeToolsSwiper.on("slideChange", () => {
     const activeIndex = tradeToolsSwiper.realIndex;
     updateActiveTabLink(activeIndex);
+    scrollToActiveTab();
   });
 
   updateActiveTabLink(tradeToolsSwiper.realIndex);

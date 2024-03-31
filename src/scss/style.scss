@@ -190,3 +190,13 @@ body.lock {
     padding: 0px 10px;
   }
 }
+
+@media (max-width: 576px) {
+  .link-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .arrow {
+    font-size: 7px;
+  }
+}
