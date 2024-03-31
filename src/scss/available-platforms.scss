@@ -182,6 +182,12 @@
   .tabs__buttons {
     margin-bottom: 0;
   }
+  .column-tabs__imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
 }
 
 @media (max-width: 768px) {
