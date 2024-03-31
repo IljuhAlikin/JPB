@@ -169,7 +169,7 @@
   max-width: 1400px;
 }
 
-@media (max-width: 1720px) {
+@media (max-width: 1760px) {
   .swiper-wrapper {
     max-width: 100%;
   }
@@ -191,7 +191,7 @@
   }
 }
 
-@media (max-width: 1720px) {
+@media (max-width: 1760px) {
   .swiper-wrapper {
     max-width: 100%;
   }
@@ -204,7 +204,9 @@
   .trade-tools__wrapper {
     flex-direction: column;
   }
-
+  .trade-tools-content {
+    flex: 1 1 auto;
+  }
   .trade-instruments__swiper {
     max-width: 100%;
   }
