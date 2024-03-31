@@ -175,6 +175,9 @@ body.lock {
 .dark-blue_bg {
   background-color: $dark-blue;
 }
+.new-level__title {
+  margin-bottom: 0px !important;
+}
 @media (max-width: 992px) {
   .link-icon {
     width: 36px;
