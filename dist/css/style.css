@@ -55,6 +55,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  background: none;
+}
+
 a {
   cursor: pointer;
 }
@@ -1353,7 +1357,6 @@ body.lock {
     height: 2px;
     background: #fff;
     position: relative;
-    top: 11px;
     transition: all 0.3s ease;
   }
 

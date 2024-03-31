@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  background: none;
+}
+
 a {
   cursor: pointer;
 }
@@ -85,10 +89,6 @@ body.lock {
   border: 3px solid $blue;
   transition: 0.5s;
 }
-.switch-checkbox input:checked ~ span {
-  // background: $light-blue;
-}
-
 .switch-checkbox span i {
   position: absolute;
   width: 13px;

@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let burger = document.getElementById("burger");
 
   burger.addEventListener("click", function () {
-    let menu = document.getElementById("nav");
+    let nav = document.getElementById("nav");
     let body = document.querySelector("body");
     burger.classList.toggle("active");
     nav.classList.toggle("active");
@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateActiveWrapperColor(activeIndex) {
     if (activeIndex === 0) {
-      availablePlatformsWrapper.style.borderColor = "#ea5504"; // Change border color
+      availablePlatformsWrapper.style.borderColor = "#ea5504";
     } else if (activeIndex === 1) {
-      availablePlatformsWrapper.style.borderColor = "#fabe00"; // Change border color
+      availablePlatformsWrapper.style.borderColor = "#fabe00";
     } else if (activeIndex === 2) {
-      availablePlatformsWrapper.style.borderColor = "#74c6be"; // Change border color
+      availablePlatformsWrapper.style.borderColor = "#74c6be";
     }
   }
 
