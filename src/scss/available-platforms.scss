@@ -6,7 +6,7 @@
 .available-platforms__wrapper {
   border: 1px solid $orange;
   border-radius: 30px;
-  padding: 50px 5px 0px 45px;
+  padding: 50px 0px 0px 45px;
 }
 
 .tabs {
@@ -22,7 +22,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 30px;
   line-height: 85%;
   font-weight: 400;
   transition: background-color 0.3s;
@@ -114,14 +113,6 @@
 .tabs__button i {
   display: block;
   color: $orange;
-  // width: 48px;
-  // height: 48px;
-  // display: block;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // border-radius: 50%;
-  // border: 1pc solid $orange;
 }
 
 .tabs__img:not(:last-child) {
@@ -138,5 +129,92 @@
 
 .swiper-slide,
 .available-platforms__wrapper {
-  transition: border-color 0.3s ease; /* Smooth transition for border color change */
+  transition: border-color 0.3s ease;
+}
+
+@media (max-width: 1441px) {
+  .column-tabs__text {
+    flex: 1 1 35%;
+  }
+  .tabs__wrapper {
+    gap: 20px;
+  }
+  .column-tabs__imgs {
+    max-width: 60%;
+  }
+  .tabs__buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .tabs__wrapper {
+    flex-direction: column-reverse;
+  }
+  .available-platforms__wrapper {
+    padding: 40px 0px 20px 30px;
+  }
+  .tabs__img-transform {
+    transform: none;
+  }
+  .column-tabs__imgs {
+    max-width: 100%;
+  }
+  .tabs {
+    margin-bottom: 20px;
+  }
+  .tabs__title {
+    margin-bottom: 10px !important;
+  }
+  .tabs__buttons-stores img {
+    max-width: 120px;
+  }
+  .tabs__buttons {
+    gap: 10px;
+  }
+  .tabs__button {
+    width: 40px;
+    height: 40px;
+  }
+  .tabs__button i {
+    font-size: 20px;
+  }
+  .tabs__buttons {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs-install {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tablink {
+    padding: 0;
+  }
+  .tabs {
+    gap: 20px;
+    margin-right: 20px;
+  }
+  .available-platforms__wrapper {
+    padding: 20px 0px 20px 20px;
+  }
+  .tabs__button {
+    width: 26px;
+    height: 26px;
+  }
+  .tabs__button i {
+    font-size: 14px;
+  }
+  .tabs__buttons-stores img {
+    max-width: 110px;
+  }
+  .tablink {
+    font-size: 14px;
+  }
+  .available-platforms__wrapper {
+    border-radius: 25px;
+  }
 }

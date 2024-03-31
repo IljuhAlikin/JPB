@@ -144,7 +144,7 @@ body.lock {
 }
 
 .link-text {
-  font-size: 18px;
+  font-size: clamp(16px, 1.8vw, 18px);
   text-transform: uppercase;
   color: $black;
 }
@@ -173,4 +173,17 @@ body.lock {
 }
 .dark-blue_bg {
   background-color: $dark-blue;
+}
+
+@media (max-width: 768px) {
+  .link-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .arrow {
+    font-size: 12px;
+  }
+  [class*="__container"] {
+    padding: 0px 10px;
+  }
 }
