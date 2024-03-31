@@ -2,46 +2,117 @@
   <div class="available-platforms__container">
     <div class="available-platforms__wrapper">
       <div class="tabs">
-        <button class="tablink orange" id="tab1">PC/MAC</button>
-        <button class="tablink orange" id="tab2">MOBILE</button>
-        <button class="tablink orange" id="tab3">WEB TRADER</button>
+        <button class="tablink">PC/MAC</button>
+        <button class="tablink">MOBILE</button>
+        <button class="tablink">WEB TRADER</button>
       </div>
-      <div id="section1" class="tabcontent active">
-        <div class="tabs__wrapper">
-          <div class="tabs__column column-tabs__text">
-            <h2 class="section__title tabs__title orange">
-              cTrader для трейдеров и инвесторов по всему миру
-            </h2>
-            <p class="tabs__text">
-              Торгуйте или инвестируйте в более чем 8000 торговых инструментов,
-              включая пары Форекс, CFD на индексы, товары, криптовалюты, акции,
-              ETF и облигации, или покупайте акции или биржевые фонды. Доступно
-              как на Windows, так и на Mac.
-            </p>
-            <div class="tabs__buttons">
-              <a href="#" class="tabs__button">
-                <i class="fab fa-windows"></i>
-              </a>
-              <a href="#" class="tabs__button">
-                <i class="fab fa-apple"></i>
-              </a>
-              <p class="tabs-install">УСТАНОВИТЬ cTrader</p>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title orange">
+                    cTrader для трейдеров и инвесторов по всему миру
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте или инвестируйте в более чем 8000 торговых
+                    инструментов, включая пары Форекс, CFD на индексы, товары,
+                    криптовалюты, акции, ETF и облигации, или покупайте акции
+                    или биржевые фонды. Доступно как на Windows, так и на Mac.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a href="#" class="tabs__button">
+                      <i class="fab fa-windows"></i>
+                    </a>
+                    <a href="#" class="tabs__button">
+                      <i class="fab fa-apple"></i>
+                    </a>
+                    <p class="tabs-install">УСТАНОВИТЬ cTrader</p>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <img src="@img/mac-and-pc.png" alt="" class="tabs__img" />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="tabs__column column-tabs__imgs">
-            <img src="@img/mac-and-pc.png" alt="" class="tabs__img" />
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title yellow">
+                    Торгуйте с мобильным приложением cTrader
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте или инвестируйте в более чем 8000 торговых
+                    инструментов, включая пары Форекс, CFD на индексы, товары,
+                    криптовалюты, акции, ETF и облигации, или покупайте акции
+                    или биржевые фонды. Доступно как на Android, так и на IOS.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a href="#">
+                      <img src="@img/AppStore.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="@img/GooglePlay.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <img
+                    src="@img/avia-phones.png"
+                    alt=""
+                    class="tabs__img tabs__img-transform"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title light-blue">
+                    Платформа cTrader WEB
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте где угодно и когда угодно, без необходимости
+                    скачивать какое-либо программное обеспечение. Независимо от
+                    того, используете ли вы Mac или ПК, вы можете без проблем
+                    выходить на рынки через браузер с помощью торговой платформы
+                    WebTrader.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a
+                      href="#"
+                      class="trade-platform-bottom__button button-trade-platform link"
+                    >
+                      <div class="button-trade-platform__text link-text">
+                        открыть WEB TRADER
+                      </div>
+                      <div
+                        class="button-trade-platform__icon link-icon light-blue_bg"
+                      >
+                        <i class="fas fa-arrow-right arrow"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <img
+                    src="@img/avia-web.png"
+                    alt=""
+                    class="tabs__img tabs__img-transform"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div id="section2" class="tabcontent">
-        <h3>Section 2</h3>
-        <p>This is the content of section 2.</p>
-      </div>
-
-      <div id="section3" class="tabcontent">
-        <h3>Section 3</h3>
-        <p>This is the content of section 3.</p>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
     </div>
   </div>

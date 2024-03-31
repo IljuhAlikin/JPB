@@ -126,10 +126,6 @@ body.lock {
 
 @import "sections.scss";
 
-// .convenient-platform__title {
-//   margin-bottom: 20px;
-// }
-
 .link-icon {
   border-radius: 50%;
   width: 45px;
@@ -167,6 +163,9 @@ body.lock {
 
 .light-blue {
   color: $light-blue;
+}
+.light-blue_bg {
+  background-color: $light-blue;
 }
 
 .dark-blue {

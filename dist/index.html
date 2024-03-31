@@ -7,14 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240331115701"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240331131301"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240331115701"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240331131301"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240331115701" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240331131301"
+  />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240331131301" />
   <title>JPB</title>
 
   <link rel="shortcut icon" type="svg" href="/img/logo-mini.svg" />
@@ -51,7 +55,7 @@
           <div class="language-header__link">eng</div>
         </div>
 
-        <a href="#" class="header__button">Личный кабинет</a>
+        <button href="#" class="header__button">Личный кабинет</button>
       </div>
     </nav>
     <a href="#" id="burger" class="header__burger">
@@ -147,6 +151,126 @@
   </div>
 </section>
 
+          <section class="section available-platforms">
+  <div class="available-platforms__container">
+    <div class="available-platforms__wrapper">
+      <div class="tabs">
+        <button class="tablink">PC/MAC</button>
+        <button class="tablink">MOBILE</button>
+        <button class="tablink">WEB TRADER</button>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title orange">
+                    cTrader для трейдеров и инвесторов по всему миру
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте или инвестируйте в более чем 8000 торговых
+                    инструментов, включая пары Форекс, CFD на индексы, товары,
+                    криптовалюты, акции, ETF и облигации, или покупайте акции
+                    или биржевые фонды. Доступно как на Windows, так и на Mac.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a href="#" class="tabs__button">
+                      <i class="fab fa-windows"></i>
+                    </a>
+                    <a href="#" class="tabs__button">
+                      <i class="fab fa-apple"></i>
+                    </a>
+                    <p class="tabs-install">УСТАНОВИТЬ cTrader</p>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <picture><source srcset="img/mac-and-pc.webp" type="image/webp"><img src="img/mac-and-pc.png" alt="" class="tabs__img" /></picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title yellow">
+                    Торгуйте с мобильным приложением cTrader
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте или инвестируйте в более чем 8000 торговых
+                    инструментов, включая пары Форекс, CFD на индексы, товары,
+                    криптовалюты, акции, ETF и облигации, или покупайте акции
+                    или биржевые фонды. Доступно как на Android, так и на IOS.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a href="#">
+                      <picture><source srcset="img/AppStore.webp" type="image/webp"><img src="img/AppStore.png" alt="" /></picture>
+                    </a>
+                    <a href="#">
+                      <picture><source srcset="img/GooglePlay.webp" type="image/webp"><img src="img/GooglePlay.png" alt="" /></picture>
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <img
+                    src="img/avia-phones.png"
+                    alt=""
+                    class="tabs__img tabs__img-transform"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="tabcontent active">
+              <div class="tabs__wrapper">
+                <div class="tabs__column column-tabs__text">
+                  <h2 class="section__title tabs__title light-blue">
+                    Платформа cTrader WEB
+                  </h2>
+                  <p class="tabs__text">
+                    Торгуйте где угодно и когда угодно, без необходимости
+                    скачивать какое-либо программное обеспечение. Независимо от
+                    того, используете ли вы Mac или ПК, вы можете без проблем
+                    выходить на рынки через браузер с помощью торговой платформы
+                    WebTrader.
+                  </p>
+                  <div class="tabs__buttons">
+                    <a
+                      href="#"
+                      class="trade-platform-bottom__button button-trade-platform link"
+                    >
+                      <div class="button-trade-platform__text link-text">
+                        открыть WEB TRADER
+                      </div>
+                      <div
+                        class="button-trade-platform__icon link-icon light-blue_bg"
+                      >
+                        <i class="fas fa-arrow-right arrow"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__column column-tabs__imgs">
+                  <img
+                    src="img/avia-web.png"
+                    alt=""
+                    class="tabs__img tabs__img-transform"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
           
         </main>
         <footer class="footer">
@@ -206,6 +330,7 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20240331115701"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240331131301"></script>
+    <script src="js/app.min.js?_v=20240331131301"></script>
   </body>
 </html>

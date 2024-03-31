@@ -6,14 +6,14 @@
 .available-platforms__wrapper {
   border: 1px solid $orange;
   border-radius: 30px;
-  padding: 50px 5px 100px 45px;
+  padding: 50px 5px 0px 45px;
 }
 
 .tabs {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
   outline: none;
 }
 
@@ -63,11 +63,21 @@
 .column-tabs__text {
   flex: 1 1 40%;
 }
+.tabs__img {
+  border-radius: 0px 0px 30px 0px;
+}
 .column-tabs__imgs {
   display: flex;
   align-items: end;
+  justify-content: end;
   flex: 1 1 55%;
   position: relative;
+}
+.column-tabs__imgs img {
+  max-height: 613px;
+}
+.tabs__img-transform {
+  transform: translateY(20px);
 }
 
 .tabs__text-down {
@@ -124,4 +134,9 @@
 .tabs__button svg {
   max-width: 18px;
   color: $orange !important;
+}
+
+.swiper-slide,
+.available-platforms__wrapper {
+  transition: border-color 0.3s ease; /* Smooth transition for border color change */
 }
