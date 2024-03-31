@@ -1038,6 +1038,7 @@ body.lock {
   text-align: center;
   background: #ea5504;
   border-radius: 30px;
+  margin-top: 10px;
 }
 
 .column-best-partnership-img {
@@ -1352,6 +1353,14 @@ body.lock {
     flex-direction: column;
   }
 
+  .top-column-trade {
+    flex: 1 1 auto;
+  }
+
+  .trade-platform-bottom__column {
+    gap: 10px;
+  }
+
   .trade-platform-bottom__wrapper {
     gap: 20px;
   }
@@ -1439,6 +1448,10 @@ body.lock {
     top: 0;
   }
 
+  .column-best-partnership-img img {
+    max-width: 300px;
+  }
+
   .footer__img {
     max-width: 140px;
   }
@@ -1493,6 +1506,10 @@ body.lock {
 @media (max-width: 1025px) {
   .trade-with-us {
     padding-top: 120px;
+  }
+
+  .column-best-partnership-img img {
+    max-width: 260px;
   }
 }
 
@@ -1765,6 +1782,11 @@ body.lock {
     align-items: end;
   }
 
+  .trade-platform-bottom__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 180px;
+  }
+
   .platform-for__wrapper {
     position: relative;
     padding-top: 50px;
@@ -1871,6 +1893,10 @@ body.lock {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .column-best-partnership-img img {
+    max-width: 200px;
   }
 
   .footer {
@@ -2024,6 +2050,23 @@ body.lock {
     border-radius: 20px;
   }
 
+  .best-partnership__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+  }
+
+  .column-best-partnership-img {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+  }
+
+  .column-best-partnership-img img {
+    max-width: 92px;
+  }
+
   .footer {
     padding: 55px 0px 70px 0px;
   }
@@ -2133,10 +2176,6 @@ body.lock {
     flex-direction: column-reverse;
   }
 
-  .top-column-trade {
-    flex: 1 1 auto;
-  }
-
   .trade-platform-bottom__column,
   .info-trade-platform__wrapper {
     gap: 20px;
@@ -2183,6 +2222,12 @@ body.lock {
     padding: 15px 20px 20px 20px;
     min-height: 175px;
     height: 100%;
+  }
+
+  .column-best-partnership__button {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   .footer {

@@ -19,6 +19,7 @@
   text-align: center;
   background: $orange;
   border-radius: 30px;
+  margin-top: 10px;
 }
 
 .column-best-partnership-img {
@@ -29,4 +30,47 @@
 }
 .column-best-partnership-img img {
   max-width: 379px;
+}
+
+@media (max-width: 1441px) {
+  .column-best-partnership-img img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .column-best-partnership-img img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .column-best-partnership-img img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .best-partnership__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+  }
+  .column-best-partnership-img {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+  }
+
+  .column-best-partnership-img img {
+    max-width: 92px;
+  }
+}
+
+@media (max-width: 576px) {
+  .column-best-partnership__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
