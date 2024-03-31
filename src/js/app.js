@@ -98,7 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
-      tradeToolsSwiper.slideTo(index); // Slide to corresponding index
+      tradeToolsSwiper.slideTo(index);
+      // link.scrollIntoView({
+      //   behavior: "smooth",
+      //   block: "nearest",
+      //   inline: "center",
+      // }); // Slide to corresponding index
     });
   });
 
@@ -107,6 +112,5 @@ document.addEventListener("DOMContentLoaded", function () {
     updateActiveTabLink(activeIndex);
   });
 
-  // Initialize active tab link
   updateActiveTabLink(tradeToolsSwiper.realIndex);
 });

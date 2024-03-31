@@ -61,6 +61,7 @@
   align-items: end;
   justify-content: space-between;
   gap: 15px;
+  // max-width: 100px;
 }
 .trade-tools-tabcontent__column {
   display: flex;
@@ -164,6 +165,32 @@
   align-items: start;
 }
 
+.trade-instruments__swiper {
+  max-width: 1400px;
+}
+
+@media (max-width: 1720px) {
+  .swiper-wrapper {
+    max-width: 100%;
+  }
+
+  .trade-tools-tabcontent__column:last-child {
+    min-width: 0px;
+  }
+
+  .trade-tools-tabs {
+    position: relative;
+  }
+
+  .trade-tools__wrapper {
+    flex-direction: column;
+  }
+
+  .trade-instruments__swiper {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1720px) {
   .swiper-wrapper {
     max-width: 100%;
@@ -192,10 +219,8 @@
   }
   .trade-tools-tabcontent__wrapper {
     max-width: 100%;
-    width: 100% !important;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    width: 100%;
+    display: block;
   }
   .trade-tools-tabcontent__column:last-child {
     align-self: start;
@@ -204,13 +229,44 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .trade-tools-tabcontent__column {
+  .trade-tools-tabcontent__list {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  .trade-tools-tabcontent__item:before {
+    background-size: 20px 20px;
+  }
+  .trade-tools-tabcontent__item {
+    padding-left: 30px;
+  }
+
+  .trade-tools-tabs-container {
+    max-width: 100%;
+  }
+
   .trade-tools-tabs {
-    // width: 900px;
-    // overflow-x: auto;
+    display: block;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  .trade-tools-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .trade-tools-tabs-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent buttons from wrapping */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+}
+
+@media (max-width: 576px) {
+  .trade-tools-tabcontent__list {
+    flex-direction: column;
   }
 }
