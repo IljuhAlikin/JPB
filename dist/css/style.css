@@ -1226,6 +1226,17 @@ body.lock {
   overflow: hidden;
 }
 
+.latest-news__slide {
+  border: 1px solid #74c6be;
+  border-radius: 20px;
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .section {
   margin-bottom: 150px;
 }
