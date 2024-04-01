@@ -1055,6 +1055,7 @@ body.lock {
 .new-level {
   position: relative;
   padding-top: 50px;
+  min-height: 900px;
 }
 
 .new-level__container {
@@ -1067,6 +1068,24 @@ body.lock {
   align-items: end;
   justify-content: space-between;
   margin-bottom: 65px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.block__item {
+  border-radius: 20px;
+  border: 2px solid #74c6be;
+  background: #fff;
+  padding: 20px;
+  align-self: start;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .new-level__bg {
@@ -1087,6 +1106,14 @@ body.lock {
   justify-content: space-between;
 }
 
+.top-block__title {
+  font-size: clamp(18px, 2vw, 28px);
+}
+
+.top-block__number {
+  font-weight: 700;
+}
+
 .top-block__text {
   display: flex;
   align-items: center;
@@ -1095,29 +1122,31 @@ body.lock {
 }
 
 .arrow-spoiler {
+  transition: max-height 0.5s ease;
   transform: rotate(0deg);
 }
 
 .block__text {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-  /* Add transition for max-height */
+  transition: max-height 0.5s ease;
 }
 
 .block__text.active {
-  max-height: 400px;
-  /* Set the max-height to a value that suits your content */
+  max-height: 600px;
+  transition: max-height 0.5s ease;
+}
+
+.block__tex-p {
+  margin-top: 20px;
 }
 
 .arrow-spoiler {
-  transition: transform 0.3s ease;
-  /* Add transition for rotation */
+  transition: transform 0.5s ease;
 }
 
 .arrow-spoiler.rotate {
   transform: rotate(90deg);
-  /* Rotate the arrow icon when the spoiler is open */
 }
 
 .footer {
