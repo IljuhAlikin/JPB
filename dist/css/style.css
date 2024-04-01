@@ -1220,6 +1220,12 @@ body.lock {
   display: none;
 }
 
+.latest-news__swiper {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .section {
   margin-bottom: 150px;
 }

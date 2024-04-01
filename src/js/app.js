@@ -124,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   spoilerButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
-      // Close all spoilers
       spoilerButtons.forEach((btn, i) => {
         if (i !== index) {
           btn.classList.remove("active");
@@ -133,10 +132,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Toggle the clicked spoiler
       button.classList.toggle("active");
       spoilerContent[index].classList.toggle("active");
       arrow[index].classList.toggle("rotate");
     });
+  });
+
+  const latestNews = new Swiper(".latest-news__swiper", {
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
   });
 });
