@@ -37,10 +37,34 @@
   align-items: center;
   column-gap: 20px;
 }
+// .block__text {
+//   display: none;
+// }
+// // .block__text.active {
+//   display: block;
+// }
+
+.arrow-spoiler {
+  transform: rotate(0deg);
+}
+
 .block__text {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Add transition for max-height */
+}
+
+.top-block__title.active {
+}
+
+.block__text.active {
+  max-height: 400px; /* Set the max-height to a value that suits your content */
 }
 
 .arrow-spoiler {
-  transform: none;
+  transition: transform 0.3s ease; /* Add transition for rotation */
+}
+
+.arrow-spoiler.rotate {
+  transform: rotate(90deg); /* Rotate the arrow icon when the spoiler is open */
 }

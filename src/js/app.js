@@ -117,4 +117,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   updateActiveTabLink(tradeToolsSwiper.realIndex);
+
+  const spoilerButtons = document.querySelectorAll(".top-block__title");
+  const spoilerContent = document.querySelectorAll(".block__text");
+  const arrow = document.querySelectorAll(".arrow-spoiler");
+
+  spoilerButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      // Close all spoilers
+      spoilerButtons.forEach((btn, i) => {
+        if (i !== index) {
+          btn.classList.remove("active");
+          spoilerContent[i].classList.remove("active");
+          arrow[i].classList.remove("rotate");
+        }
+      });
+
+      // Toggle the clicked spoiler
+      button.classList.toggle("active");
+      spoilerContent[index].classList.toggle("active");
+      arrow[index].classList.toggle("rotate");
+    });
+  });
 });
