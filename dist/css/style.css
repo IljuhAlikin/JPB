@@ -1331,6 +1331,72 @@ body.lock {
   transform: rotate(180deg);
 }
 
+.rewards__wrapper {
+  max-width: 100%;
+}
+
+.rewards__swiper {
+  overflow: hidden;
+}
+
+.rewards__slide {
+  max-width: 100%;
+}
+
+.rewards__wrapper {
+  position: relative;
+}
+
+.rewards-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px 0px 0px;
+}
+
+.rewards-slide__text {
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 300;
+  max-width: 570px;
+}
+
+.rewards-slide__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.rewards-slide__name {
+  font-weight: 300;
+}
+
+.rewards-slide__what-is {
+  font-weight: 400;
+}
+
+.rewards-slide__date {
+  font-weight: 400;
+}
+
+.rewards-slide__imgs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rewards__navigation {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
 .section {
   margin-bottom: 150px;
 }

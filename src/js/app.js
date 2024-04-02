@@ -145,19 +145,19 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: calculateSpaceBetween(),
     centeredSlides: false,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".latest-news-next",
+      prevEl: ".latest-news-prev",
     },
   });
 
   function calculateSpaceBetween() {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 1920) {
-      return 30; // Space between slides for 4 slides view
+      return 30;
     } else if (screenWidth >= 1620) {
-      return 20; // Space between slides for 3 slides view
+      return 20;
     } else {
-      return 10; // Space between slides for 2 slides view
+      return 10;
     }
   }
   function calculateSlides() {
@@ -186,4 +186,14 @@ document.addEventListener("DOMContentLoaded", function () {
       return 1;
     }
   }
+
+  const rewards = new Swiper(".rewards__swiper", {
+    loop: false,
+    slidesPerView: 1,
+    effect: "slide",
+    navigation: {
+      nextEl: ".rewards-next",
+      prevEl: ".rewards-prev",
+    },
+  });
 });
