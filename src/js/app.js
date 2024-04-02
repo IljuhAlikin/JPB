@@ -140,12 +140,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const latestNews = new Swiper(".latest-news__swiper", {
     loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: calculateSlides(),
     effect: "slide",
+    spaceBetween: calculateSpaceBetween(),
+    centeredSlides: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+
+  function calculateSpaceBetween() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1920) {
+      return 30; // Space between slides for 4 slides view
+    } else if (screenWidth >= 1620) {
+      return 20; // Space between slides for 3 slides view
+    } else {
+      return 10; // Space between slides for 2 slides view
+    }
+  }
+  function calculateSlides() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1920) {
+      return 4;
+    } else if (screenWidth >= 1620) {
+      return 3.9;
+    } else if (screenWidth >= 1520) {
+      return 3.5;
+    } else if (screenWidth >= 1440) {
+      return 3.3;
+    } else if (screenWidth >= 1024) {
+      return 2.4;
+    } else if (screenWidth >= 992) {
+      return 2.3;
+    } else if (screenWidth >= 845) {
+      return 2;
+    } else if (screenWidth >= 768) {
+      return 2;
+    } else if (screenWidth >= 576) {
+      return 1.5;
+    } else if (screenWidth >= 425) {
+      return 1.2;
+    } else {
+      return 1;
+    }
+  }
 });
