@@ -168,19 +168,19 @@ document.addEventListener("DOMContentLoaded", function () {
       return 3.9;
     } else if (screenWidth >= 1520) {
       return 3.5;
-    } else if (screenWidth >= 1440) {
+    } else if (screenWidth >= 1440 || screenWidth > 1200) {
       return 3.3;
-    } else if (screenWidth >= 1024) {
-      return 2.4;
-    } else if (screenWidth >= 992) {
+    } else if (screenWidth >= 1200 || screenWidth > 992) {
+      return 2.8;
+    } else if (screenWidth >= 992 || screenWidth > 845) {
       return 2.3;
-    } else if (screenWidth >= 845) {
+    } else if (screenWidth >= 845 || screenWidth > 768) {
       return 2;
-    } else if (screenWidth >= 768) {
-      return 2;
-    } else if (screenWidth >= 576) {
+    } else if (screenWidth >= 768 || screenWidth > 660) {
+      return 1.8;
+    } else if (screenWidth >= 660 || screenWidth > 490) {
       return 1.5;
-    } else if (screenWidth >= 425) {
+    } else if (screenWidth >= 490 || screenWidth > 420) {
       return 1.2;
     } else {
       return 1;

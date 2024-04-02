@@ -1244,7 +1244,7 @@ body.lock {
 }
 
 .slide-latest-news__img img {
-  width: 350px;
+  width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1280,7 +1280,7 @@ body.lock {
 }
 
 .latest-news__slide.swiper-slide-active .slide-latest-news__img img {
-  width: 350px;
+  width: 100%;
   height: 280px;
 }
 
