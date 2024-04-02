@@ -139,8 +139,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const latestNews = new Swiper(".latest-news__swiper", {
-    loop: false,
-    slidesPerView: 3,
+    loop: true,
+    slidesPerView: 4,
     spaceBetween: 30,
+    effect: "slide",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 });
