@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   swiperButtons.forEach((button, index) => {
     button.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default link behavior
+      event.preventDefault();
       swiper.slideTo(index);
     });
   });
@@ -194,6 +194,10 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".rewards-next",
       prevEl: ".rewards-prev",
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
     },
   });
 });

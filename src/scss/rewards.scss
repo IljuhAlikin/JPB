@@ -59,7 +59,7 @@
 .rewards-slide__text {
   font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 300;
-  max-width: 570px;
+  flex: 0 1 570px;
 }
 .rewards-slide__description {
   display: flex;
@@ -69,6 +69,7 @@
 }
 .rewards-slide__name {
   font-weight: 300;
+  font-size: clamp(16px, 2vw, 24px);
 }
 .rewards-slide__what-is {
   font-weight: 400;
@@ -84,7 +85,7 @@
 
 .rewards__navigation {
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 0;
   max-width: 550px;
   width: 100%;
@@ -92,6 +93,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  height: 45px;
 }
 .swiper-button-prev {
 }
@@ -106,4 +108,92 @@
 .swiper-button-next {
 }
 .rewards-next {
+}
+
+.rewards__navigation-adaptive {
+  display: none;
+}
+
+@media (max-width: 1620px) {
+  .rewards-slide__text {
+    flex: 0 1 410px;
+  }
+  .rewards__navigation {
+    max-width: 470px;
+  }
+  .rewards-slide {
+    padding: 0px 40px 0px 0px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .rewards__container {
+    position: relative;
+  }
+  .rewards__navigation {
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    max-width: 160px;
+  }
+  .rewards__navigation-adaptive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rewards__wrapper {
+    position: initial;
+  }
+  .rewards-slide__text {
+    flex: 0 1 320px;
+  }
+
+  .rewards-slide__imgs img {
+    max-width: 120px;
+  }
+  .rewards-slide {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .rewards-slide__text {
+    flex: 0 1 280px;
+  }
+  .rewards-slide__imgs {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .rewards-slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .rewards-slide__text {
+    flex: 1 1 auto;
+  }
+
+  .rewards-slide__imgs img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rewards__wrapper {
+    position: relative;
+  }
+  .rewards__navigation {
+    bottom: -30px;
+    top: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .rewards-slide__imgs {
+    gap: 20px;
+  }
+  .rewards-slide__imgs img {
+    max-width: 120px;
+  }
 }
