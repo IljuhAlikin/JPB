@@ -11,9 +11,7 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
+ul {
   list-style: none;
 }
 
@@ -1541,6 +1539,46 @@ body.lock {
   text-align: left;
 }
 
+.withdraw__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.item-withdraw__title {
+  margin-bottom: 40px;
+}
+
+.item-withdraw__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.item-withdraw__text {
+  max-width: 720px;
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+
+.list-withdraw {
+  list-style-type: decimal !important;
+}
+
+.list-withdraw__item {
+  font-size: clamp(14px, 1.8vw, 20px);
+  margin-left: 30px;
+  font-weight: 300;
+  line-height: 122%;
+}
+
+.item-withdraw__info {
+  font-weight: 400;
+  max-width: none;
+}
+
+.item-withdraw__info span {
+  font-weight: 300;
+}
+
 .section {
   margin-bottom: 150px;
 }
@@ -1796,6 +1834,14 @@ body.lock {
 
   .rewards-slide {
     padding: 0px 40px 0px 0px;
+  }
+
+  .item-withdraw__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .item-withdraw__title {
+    margin-bottom: 30px;
   }
 
   .section__wrapper {
@@ -2570,6 +2616,10 @@ body.lock {
 
   .rewards-slide__imgs {
     gap: 10px;
+  }
+
+  .item-withdraw__text:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .section {
