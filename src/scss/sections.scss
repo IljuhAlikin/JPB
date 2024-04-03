@@ -27,6 +27,59 @@
 .small-text {
   font-size: clamp(14px, 1vw, 18px);
 }
+.section__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.for-you {
+}
+.for-you__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: clamp(14px, 2.5vw, 30px);
+}
+.for-you__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.for-you__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+.for-you__img img {
+}
+.for-you__text {
+  max-width: 340px;
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+
+@media (max-width: 1620px) {
+  .for-you__item {
+  }
+  .section__wrapper {
+    flex-direction: column;
+  }
+  .for-you__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .for-you__text {
+    max-width: none;
+  }
+  .for-you__title {
+    margin-bottom: 40px;
+  }
+  .top-up__content {
+    gap: 5px;
+  }
+}
 
 @media (max-width: 1441px) {
   .section__title {
@@ -40,6 +93,45 @@
   .section__title {
     margin-bottom: 35px;
   }
+  .for-you__img img {
+    max-width: 36px;
+  }
+
+  .for-you__item {
+    gap: 10px;
+  }
+  .for-you__title {
+    margin-bottom: 20px;
+  }
+  .top-up__wrapper {
+    width: 900px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .top-up__content {
+    width: 900px;
+
+    overflow-x: auto;
+  }
+  .top-up__wrapper::-webkit-scrollbar {
+    height: 4px;
+  }
+  .column-top-up__title-first {
+    max-width: 140px;
+  }
+  .top-up__content {
+    gap: 0px;
+    padding-bottom: 10px;
+  }
+  .top-up__main-title {
+    margin-bottom: 30px;
+  }
+  .column-top-up__title {
+    height: 40px;
+  }
+  .section__wrapper {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -47,6 +139,27 @@
     margin-bottom: 65px;
   }
   .convenient-platform-mobile {
+    margin-bottom: 10px;
+  }
+  .for-you {
+    width: 790px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .for-you__wrapper {
+    width: 790px;
+    overflow-x: auto;
+  }
+  .for-you::-webkit-scrollbar {
+    display: none;
+  }
+  .for-you__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .for-you__wrapper {
+    gap: 20px;
+  }
+  .top-up__main-title {
     margin-bottom: 10px;
   }
 }
