@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		dd.addEventListener("mouseleave", function () {
 			dropdownMenus[index].classList.remove("active");
 			dropdownMenus[index].addEventListener("mouseleave", function () {
-				dropdownMenus[index].classList.$(selector).remove();
+				dropdownMenus[index].classList.remove();
 				("active");
 			});
 			mainArrows[index].classList.add("active");
