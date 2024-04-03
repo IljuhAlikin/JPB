@@ -3,243 +3,227 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
 document.addEventListener("DOMContentLoaded", function () {
-  let burger = document.getElementById("burger");
+	let burger = document.getElementById("burger");
 
-  burger.addEventListener("click", function () {
-    let nav = document.getElementById("nav");
-    let body = document.querySelector("body");
-    burger.classList.toggle("active");
-    nav.classList.toggle("active");
-    body.classList.toggle("lock");
-  });
+	burger.addEventListener("click", function () {
+		let nav = document.getElementById("nav");
+		let body = document.querySelector("body");
+		burger.classList.toggle("active");
+		nav.classList.toggle("active");
+		body.classList.toggle("lock");
+	});
 
-  const swiper = new Swiper(".swiper", {
-    loop: false,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true,
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-  });
+	const swiper = new Swiper(".swiper", {
+		loop: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: true,
+		},
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true,
+		},
+	});
 
-  const swiperButtons = document.querySelectorAll(".tablink");
-  const availablePlatformsWrapper = document.querySelector(
-    ".available-platforms__wrapper"
-  );
+	const swiperButtons = document.querySelectorAll(".tablink");
+	const availablePlatformsWrapper = document.querySelector(
+		".available-platforms__wrapper"
+	);
 
-  function updateActiveTabButtonColor(activeIndex) {
-    swiperButtons.forEach((button, index) => {
-      if (index === activeIndex) {
-        if (activeIndex === 0) {
-          button.style.color = "#ea5504";
-        } else if (activeIndex === 1) {
-          button.style.color = "#fabe00";
-        } else if (activeIndex === 2) {
-          button.style.color = "#74c6be";
-        }
-      } else {
-        button.style.color = "black";
-      }
-    });
-  }
+	function updateActiveTabButtonColor(activeIndex) {
+		swiperButtons.forEach((button, index) => {
+			if (index === activeIndex) {
+				if (activeIndex === 0) {
+					button.style.color = "#ea5504";
+				} else if (activeIndex === 1) {
+					button.style.color = "#fabe00";
+				} else if (activeIndex === 2) {
+					button.style.color = "#74c6be";
+				}
+			} else {
+				button.style.color = "black";
+			}
+		});
+	}
 
-  function updateActiveWrapperColor(activeIndex) {
-    if (activeIndex === 0) {
-      availablePlatformsWrapper.style.borderColor = "#ea5504";
-    } else if (activeIndex === 1) {
-      availablePlatformsWrapper.style.borderColor = "#fabe00";
-    } else if (activeIndex === 2) {
-      availablePlatformsWrapper.style.borderColor = "#74c6be";
-    }
-  }
+	function updateActiveWrapperColor(activeIndex) {
+		if (activeIndex === 0) {
+			availablePlatformsWrapper.style.borderColor = "#ea5504";
+		} else if (activeIndex === 1) {
+			availablePlatformsWrapper.style.borderColor = "#fabe00";
+		} else if (activeIndex === 2) {
+			availablePlatformsWrapper.style.borderColor = "#74c6be";
+		}
+	}
 
-  swiperButtons.forEach((button, index) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      swiper.slideTo(index);
-    });
-  });
+	swiperButtons.forEach((button, index) => {
+		button.addEventListener("click", event => {
+			event.preventDefault();
+			swiper.slideTo(index);
+		});
+	});
 
-  swiper.on("slideChange", () => {
-    const activeIndex = swiper.realIndex;
-    updateActiveTabButtonColor(activeIndex);
-    updateActiveWrapperColor(activeIndex);
-  });
+	swiper.on("slideChange", () => {
+		const activeIndex = swiper.realIndex;
+		updateActiveTabButtonColor(activeIndex);
+		updateActiveWrapperColor(activeIndex);
+	});
 
-  updateActiveTabButtonColor(swiper.realIndex);
-  updateActiveWrapperColor(swiper.realIndex);
+	updateActiveTabButtonColor(swiper.realIndex);
+	updateActiveWrapperColor(swiper.realIndex);
 
-  const tradeToolsSwiper = new Swiper(".trade-instruments__swiper", {
-    loop: false,
+	const tradeToolsSwiper = new Swiper(".trade-instruments__swiper", {
+		loop: false,
 
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-  });
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true,
+		},
+	});
 
-  const tabLinks = document.querySelectorAll(".trade-tools-tablink");
+	const tabLinks = document.querySelectorAll(".trade-tools-tablink");
 
-  function updateActiveTabLink(activeIndex) {
-    tabLinks.forEach((link, index) => {
-      if (index === activeIndex) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-  }
+	function updateActiveTabLink(activeIndex) {
+		tabLinks.forEach((link, index) => {
+			if (index === activeIndex) {
+				link.classList.add("active");
+			} else {
+				link.classList.remove("active");
+			}
+		});
+	}
 
-  function scrollToActiveTab() {
-    const activeIndex = tradeToolsSwiper.realIndex;
-    const activeTab = tabLinks[activeIndex];
-    activeTab.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
-  }
+	function scrollToActiveTab() {
+		const activeIndex = tradeToolsSwiper.realIndex;
+		const activeTab = tabLinks[activeIndex];
+		activeTab.scrollIntoView({
+			behavior: "smooth",
+			block: "nearest",
+			inline: "center",
+		});
+	}
 
-  tabLinks.forEach((link, index) => {
-    link.addEventListener("click", () => {
-      tradeToolsSwiper.slideTo(index);
-      scrollToActiveTab();
-    });
-  });
+	tabLinks.forEach((link, index) => {
+		link.addEventListener("click", () => {
+			tradeToolsSwiper.slideTo(index);
+			scrollToActiveTab();
+		});
+	});
 
-  tradeToolsSwiper.on("slideChange", () => {
-    const activeIndex = tradeToolsSwiper.realIndex;
-    updateActiveTabLink(activeIndex);
-    scrollToActiveTab();
-  });
+	tradeToolsSwiper.on("slideChange", () => {
+		const activeIndex = tradeToolsSwiper.realIndex;
+		updateActiveTabLink(activeIndex);
+		scrollToActiveTab();
+	});
 
-  updateActiveTabLink(tradeToolsSwiper.realIndex);
+	updateActiveTabLink(tradeToolsSwiper.realIndex);
 
-  const spoilerButtons = document.querySelectorAll(".top-block__title");
-  const spoilerContent = document.querySelectorAll(".block__text");
-  const arrow = document.querySelectorAll(".arrow-spoiler");
+	const spoilerButtons = document.querySelectorAll(".top-block__title");
+	const spoilerContent = document.querySelectorAll(".block__text");
+	const arrow = document.querySelectorAll(".arrow-spoiler");
 
-  spoilerButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      spoilerButtons.forEach((btn, i) => {
-        if (i !== index) {
-          btn.classList.remove("active");
-          spoilerContent[i].classList.remove("active");
-          arrow[i].classList.remove("rotate");
-        }
-      });
+	spoilerButtons.forEach((button, index) => {
+		button.addEventListener("click", () => {
+			spoilerButtons.forEach((btn, i) => {
+				if (i !== index) {
+					btn.classList.remove("active");
+					spoilerContent[i].classList.remove("active");
+					arrow[i].classList.remove("rotate");
+				}
+			});
 
-      button.classList.toggle("active");
-      spoilerContent[index].classList.toggle("active");
-      arrow[index].classList.toggle("rotate");
-    });
-  });
+			button.classList.toggle("active");
+			spoilerContent[index].classList.toggle("active");
+			arrow[index].classList.toggle("rotate");
+		});
+	});
 
-  const latestNews = new Swiper(".latest-news__swiper", {
-    loop: true,
-    slidesPerView: calculateSlides(),
-    effect: "slide",
-    spaceBetween: calculateSpaceBetween(),
-    centeredSlides: false,
-    navigation: {
-      nextEl: ".latest-news-next",
-      prevEl: ".latest-news-prev",
-    },
-  });
+	const latestNews = new Swiper(".latest-news__swiper", {
+		loop: true,
+		slidesPerView: calculateSlides(),
+		effect: "slide",
+		spaceBetween: calculateSpaceBetween(),
+		centeredSlides: false,
+		navigation: {
+			nextEl: ".latest-news-next",
+			prevEl: ".latest-news-prev",
+		},
+	});
 
-  function calculateSpaceBetween() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1920) {
-      return 30;
-    } else if (screenWidth >= 1620) {
-      return 20;
-    } else {
-      return 10;
-    }
-  }
-  function calculateSlides() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1920) {
-      return 4;
-    } else if (screenWidth >= 1620) {
-      return 3.9;
-    } else if (screenWidth >= 1520) {
-      return 3.5;
-    } else if (screenWidth >= 1440 || screenWidth > 1200) {
-      return 3.3;
-    } else if (screenWidth >= 1200 || screenWidth > 992) {
-      return 2.8;
-    } else if (screenWidth >= 992 || screenWidth > 845) {
-      return 2.3;
-    } else if (screenWidth >= 845 || screenWidth > 768) {
-      return 2;
-    } else if (screenWidth >= 768 || screenWidth > 660) {
-      return 1.8;
-    } else if (screenWidth >= 660 || screenWidth > 490) {
-      return 1.5;
-    } else if (screenWidth >= 490 || screenWidth > 420) {
-      return 1.2;
-    } else {
-      return 1;
-    }
-  }
+	function calculateSpaceBetween() {
+		const screenWidth = window.innerWidth;
+		if (screenWidth >= 1920) {
+			return 30;
+		} else if (screenWidth >= 1620) {
+			return 20;
+		} else {
+			return 10;
+		}
+	}
+	function calculateSlides() {
+		const screenWidth = window.innerWidth;
+		if (screenWidth >= 1920) {
+			return 4;
+		} else if (screenWidth >= 1620) {
+			return 3.9;
+		} else if (screenWidth >= 1520) {
+			return 3.5;
+		} else if (screenWidth >= 1440 || screenWidth > 1200) {
+			return 3.3;
+		} else if (screenWidth >= 1200 || screenWidth > 992) {
+			return 2.8;
+		} else if (screenWidth >= 992 || screenWidth > 845) {
+			return 2.3;
+		} else if (screenWidth >= 845 || screenWidth > 768) {
+			return 2;
+		} else if (screenWidth >= 768 || screenWidth > 660) {
+			return 1.8;
+		} else if (screenWidth >= 660 || screenWidth > 490) {
+			return 1.5;
+		} else if (screenWidth >= 490 || screenWidth > 420) {
+			return 1.2;
+		} else {
+			return 1;
+		}
+	}
 
-  const rewards = new Swiper(".rewards__swiper", {
-    loop: false,
-    slidesPerView: 1,
-    effect: "slide",
-    navigation: {
-      nextEl: ".rewards-next",
-      prevEl: ".rewards-prev",
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-  });
+	const rewards = new Swiper(".rewards__swiper", {
+		loop: false,
+		slidesPerView: 1,
+		effect: "slide",
+		navigation: {
+			nextEl: ".rewards-next",
+			prevEl: ".rewards-prev",
+		},
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true,
+		},
+	});
 
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+	const dropdowns = document.querySelectorAll(".dropdown");
+	const dropdownMenus = document.querySelectorAll(".dropdown-menu");
+	const mainArrows = document.querySelectorAll(".main-arrow");
+	const secondArrows = document.querySelectorAll(".second-arrow");
 
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      const dropdown = this.querySelector(".dropdown");
-      dropdown.style.display =
-        dropdown.style.display === "block" ? "none" : "block";
-      this.classList.toggle("active");
-    });
-  });
+	dropdowns.forEach((dd, index) => {
+		dd.addEventListener("mouseenter", function () {
+			dropdownMenus[index].classList.add("active");
+			dropdownMenus[index].addEventListener("mouseenter", function () {
+				dropdownMenus[index].classList.add("active");
+			});
+			mainArrows[index].classList.remove("active");
+			secondArrows[index].classList.add("active");
+		});
 
-  document.addEventListener("click", function (e) {
-    dropdownToggles.forEach((toggle) => {
-      if (!toggle.contains(e.target)) {
-        toggle.querySelector(".dropdown").style.display = "none";
-        toggle.classList.remove("active");
-      }
-    });
-  });
-
-  const toggles = document.querySelectorAll(".dropdown-toggle");
-  const menus = document.querySelectorAll(".dropdown-menu");
-
-  toggles.forEach(function (toggle, index) {
-    toggle.addEventListener("mouseover", function () {
-      menus[index].classList.add("active");
-    });
-
-    toggle.addEventListener("mouseout", function () {
-      menus[index].classList.remove("active");
-    });
-
-    menus[index].addEventListener("mouseover", function () {
-      menus[index].classList.add("active");
-    });
-
-    menus[index].addEventListener("mouseout", function () {
-      menus[index].classList.remove("active");
-    });
-  });
+		dd.addEventListener("mouseleave", function () {
+			dropdownMenus[index].classList.remove("active");
+			dropdownMenus[index].addEventListener("mouseleave", function () {
+				dropdownMenus[index].classList.$(selector).remove();
+				("active");
+			});
+			mainArrows[index].classList.add("active");
+			secondArrows[index].classList.remove("active");
+		});
+	});
 });
