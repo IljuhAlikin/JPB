@@ -135,6 +135,8 @@ body.lock {
 
 @import "withdraw.scss";
 
+@import "services.scss";
+
 @import "sections.scss";
 
 .link-icon {
@@ -254,4 +256,8 @@ body.lock {
   .arrow {
     font-size: 7px;
   }
+}
+
+.section-margin .section__title {
+  margin-bottom: 20px;
 }
