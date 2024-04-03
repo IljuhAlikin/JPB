@@ -184,6 +184,36 @@ body.lock {
 .new-level__title {
   margin-bottom: 0px !important;
 }
+.types__title {
+  margin-bottom: 40px !important;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  row-gap: 5px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.page-navigation__link {
+  position: relative;
+  display: block;
+  line-height: 85%;
+  color: #afafaf;
+  font-weight: 300;
+}
+.page-navigation__link:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -32px;
+  width: 29px;
+  display: block;
+  height: 100%;
+  background-color: $dark-blue;
+  background: url("../img/page-arrow.svg") no-repeat;
+}
 @media (max-width: 992px) {
   .link-icon {
     width: 36px;
@@ -191,6 +221,9 @@ body.lock {
   }
   .arrow {
     font-size: 12px;
+  }
+  .page-navigation {
+    margin-bottom: 40px;
   }
 }
 
