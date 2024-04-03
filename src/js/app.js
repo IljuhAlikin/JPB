@@ -200,4 +200,46 @@ document.addEventListener("DOMContentLoaded", function () {
       crossFade: true,
     },
   });
+
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      const dropdown = this.querySelector(".dropdown");
+      dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+      this.classList.toggle("active");
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    dropdownToggles.forEach((toggle) => {
+      if (!toggle.contains(e.target)) {
+        toggle.querySelector(".dropdown").style.display = "none";
+        toggle.classList.remove("active");
+      }
+    });
+  });
+
+  const toggles = document.querySelectorAll(".dropdown-toggle");
+  const menus = document.querySelectorAll(".dropdown-menu");
+
+  toggles.forEach(function (toggle, index) {
+    toggle.addEventListener("mouseover", function () {
+      menus[index].classList.add("active");
+    });
+
+    toggle.addEventListener("mouseout", function () {
+      menus[index].classList.remove("active");
+    });
+
+    menus[index].addEventListener("mouseover", function () {
+      menus[index].classList.add("active");
+    });
+
+    menus[index].addEventListener("mouseout", function () {
+      menus[index].classList.remove("active");
+    });
+  });
 });
