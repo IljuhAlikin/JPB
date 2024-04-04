@@ -1093,8 +1093,8 @@ body.lock {
 
 .column-advantages-img img {
   min-height: 530px;
-  border: 2px solid #74c6be;
   border-radius: 30px;
+  border: 2px solid #74c6be;
 }
 
 .item-column-advantages__img img {
