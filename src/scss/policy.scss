@@ -1,0 +1,52 @@
+.policy-agreement__wrapper {
+  max-width: 1320px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: clamp(14px, 1.2vw, 20px);
+}
+.item-policy-agreement__text {
+}
+.item-policy-agreement__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-policy-agreement {
+}
+.list-policy-agreement__item {
+}
+.item-policy-agreement__title {
+  font-weight: 500;
+}
+.list-policy-agreement_small {
+  gap: 0px;
+}
+
+.list-policy-agreement__item {
+  position: relative;
+  margin-left: 20px;
+}
+
+ul .list-policy-agreement__item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: block;
+  background: $black;
+}
+
+@media (max-width: 1441px) {
+  ul .list-policy-agreement__item::before {
+    top: 5px;
+    left: -13px;
+  }
+  .list-policy-agreement__item {
+    margin-left: 13px;
+  }
+}
