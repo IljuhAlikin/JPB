@@ -2129,6 +2129,37 @@ ul .list-policy-agreement__item::before {
   margin-bottom: 30px;
 }
 
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 872px;
+}
+
+.item-about__text {
+  font-weight: 300;
+}
+
+.item-about__text span {
+  font-weight: 500;
+}
+
+.item-about__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__list {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .section-margin .section__title {
   margin-bottom: 20px;
 }
@@ -3694,6 +3725,15 @@ ul .list-policy-agreement__item::before {
 
   .arrow {
     font-size: 7px;
+  }
+
+  .about__wrapper {
+    gap: 40px;
+  }
+
+  .about__list {
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .gift-card__subtitle {

@@ -236,6 +236,53 @@ body.lock {
   margin-bottom: 30px;
 }
 
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 872px;
+}
+
+.item-about__text {
+  font-weight: 300;
+}
+
+.item-about__text span {
+  font-weight: 500;
+}
+
+.item-about__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__list {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.item-about {
+}
+.bottom-section__title {
+}
+.item-about__title {
+}
+.dark-blue {
+}
+.list-section {
+}
+.list-section__item {
+}
+.item-about__text {
+}
+.item-section__text {
+}
+
 @media (max-width: 992px) {
   .section-margin {
     margin-top: 120px;
@@ -267,6 +314,13 @@ body.lock {
   }
   .arrow {
     font-size: 7px;
+  }
+  .about__wrapper {
+    gap: 40px;
+  }
+  .about__list {
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .gift-card__subtitle {
