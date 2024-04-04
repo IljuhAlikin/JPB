@@ -7,18 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240404164559"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240404174032"
     rel="stylesheet"
   />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240404164559"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240404174032"
   />
   <link
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240404164559"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?_v=20240404174032"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240404164559" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240404174032" />
   <title>JPB</title>
 
   <link rel="shortcut icon" type="svg" href="/img/logo-mini.svg" />
@@ -196,6 +196,12 @@
     </button>
   </div>
 </header>
+<div class="preloader" id="page-preloader">
+  <div class="loader">
+    <img src="img/preloader.gif" alt="" />
+  </div>
+</div>
+
 
         <main class="main">
           <section class="section trade-with-us">
@@ -223,12 +229,19 @@
         </div>
       </div>
       <div class="trade-with-us__column img-area">
-        <!-- <div class="img-area__bg">
-          <picture><source srcset="img/trade-with-us-bg.webp" type="image/webp"><img src="img/trade-with-us-bg.png" alt="" /></picture>
-        </div> -->
         <div class="img-area__wrapper">
-          <picture><source srcset="img/phone-1.webp" type="image/webp"><img src="img/phone-1.png" alt="" class="img-area__img" /></picture>
-          <picture><source srcset="img/phone-2.webp" type="image/webp"><img src="img/phone-2.png" alt="" class="img-area__img" /></picture>
+          <img
+            src="img/phone-1.png"
+            alt=""
+            class="img-area__img img-area__img_1"
+          />
+          <div class="img-area-container">
+            <img
+              src="img/phone-1.gif"
+              alt=""
+              class="img-area__img img-area__img_2"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -1366,35 +1379,6 @@
           <div class="swiper-slide latest-news__slide slide-latest-news">
             <div class="slide-latest-news__top">
               <div class="slide-latest-news__img">
-                <picture><source srcset="img/news-1.webp" type="image/webp"><img src="img/news-1.png" alt="" /></picture>
-              </div>
-              <div class="slide-latest-news__data">
-                <img src="img/clock.svg" alt="" />
-                <p class="data-time">10 марта 2024</p>
-              </div>
-            </div>
-            <h4 class="slide-latest-news__title">
-              Банк Японии может свернуть политику отрицательных процентных
-              ставок
-            </h4>
-            <p class="slide-latest-news__text normal-text small-text">
-              Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
-            </p>
-            <div class="slide-latest-news__buttons">
-              <a href="news-single.html" class="link">
-                <div class="link-text">Посмотреть рейтинг</div>
-                <div class="link-icon">
-                  <i class="fas fa-arrow-right arrow"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-slide latest-news__slide slide-latest-news">
-            <div class="slide-latest-news__top">
-              <div class="slide-latest-news__img">
                 <picture><source srcset="img/news-2.webp" type="image/webp"><img src="img/news-2.png" alt="" /></picture>
               </div>
               <div class="slide-latest-news__data">
@@ -1678,7 +1662,7 @@
 </footer>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240404164559"></script>
-    <script src="js/app.min.js?_v=20240404164559"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240404174032"></script>
+    <script src="js/app.min.js?_v=20240404174032"></script>
   </body>
 </html>

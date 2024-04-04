@@ -67,10 +67,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // transform: rotate(2deg);
 }
 .img-area__img {
   position: relative;
   z-index: 1;
+  // max-width: 30%;
+}
+
+.img-area__img_1 {
+  // max-width: 342px;
+  max-width: 50%;
+}
+
+.img-area-container {
+}
+.img-area__img_2 {
+  // max-width: 80%;
+  // transform: rotate(5deg);
+  // image-rendering: optimizeQuality !important;
 }
 
 .trade-with-us__button-section {
