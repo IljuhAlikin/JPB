@@ -94,6 +94,10 @@
   transition: all 0.3s ease;
 }
 
+.trade-with-us__button:hover {
+  background: $yellow;
+}
+
 @media (max-width: 1441px) {
   .text-trade-with-us {
     row-gap: 30px;

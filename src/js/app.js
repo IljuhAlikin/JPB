@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dd.addEventListener("mouseleave", function () {
       dropdownMenus[index].classList.remove("active");
       dropdownMenus[index].addEventListener("mouseleave", function () {
-        dropdownMenus[index].classList.remove();
-        ("active");
+        dropdownMenus[index].classList.remove("active");
       });
       mainArrows[index].classList.add("active");
       secondArrows[index].classList.remove("active");

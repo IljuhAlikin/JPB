@@ -26,7 +26,8 @@
 
 .header__options {
   display: flex;
-  justify-content: stretch;
+  // justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
   justify-items: center;
   gap: 5px;
@@ -37,22 +38,23 @@
   display: flex;
   gap: 5px;
   cursor: pointer;
-  padding: 30px 0;
+  // padding: 30px 0;
   position: relative;
-  width: 100%;
+  // width: 100%;
   justify-content: center;
 }
 
 .header__dropdown {
   z-index: 2;
-  padding: 22px 40px;
+  padding: 22px 10px;
   position: absolute;
   background: #191919;
-  top: 78px;
-  width: 115%;
+  top: 55px;
+  width: 285px;
   right: 0;
+  left: 0;
   color: white;
-  border: 3px #00f0ff solid;
+  border: 2px #00f0ff solid;
 
   transition: 0.5s;
   // transform: translateY(-100%);
@@ -122,6 +124,11 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dropdown__text a:hover {
+  color: $yellow;
 }
 
 .dropdown__texts {
@@ -138,7 +145,7 @@
 
 .header__text {
   color: white;
-  font-size: 18px;
+  font-size: clamp(14px, 1.2vw, 18px);
   text-transform: uppercase;
   text-align: center;
 }
@@ -256,6 +263,34 @@
 // .dropdown.active {
 //   display: block;
 // }
+
+@media (max-width: 1720px) {
+  .header__options {
+    gap: 10px;
+  }
+
+  .header__options {
+    flex: 0 1 45%;
+  }
+
+  .header__column {
+    flex: 0 1 45%;
+  }
+
+  .header__logo {
+    flex: 0 1 10%;
+  }
+  .header__dropdown {
+    // min-width: none;
+    // width: auto;
+    // position: relative;
+    // position: absolute;
+    // left: 0;
+  }
+}
+
+@media (max-width: 1320px) {
+}
 
 @media (max-width: 992px) {
   .header {
@@ -391,8 +426,63 @@
   }
 
   .header__button {
-    font-size: 20px;
+    font-size: 14px;
     padding: 15px 25px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+  .header__dropdown {
+    // height: 0;
+    // overflow: hidden;
+    position: initial;
+    top: 0;
+    background: none;
+    height: 0px;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  .header__item {
+    transition: all 0.3s ease;
+  }
+  .header__options {
+    flex: initial;
+    gap: 15px;
+  }
+
+  .header__text:has(.dropdown-menu.active) {
+    color: $yellow;
+  }
+  .dropdown__texts {
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 300;
+    padding-top: 20px;
+  }
+  .header__options {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__item {
+    display: block;
+  }
+
+  .header__dropdown::before {
+    display: none;
+  }
+
+  .header__dropdown.active {
+    height: 100%;
+    position: relative;
+  }
+
+  .dropdown__texts {
   }
 }
 
