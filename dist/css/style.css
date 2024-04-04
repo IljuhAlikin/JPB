@@ -3576,6 +3576,10 @@ ul .list-policy-agreement__item::before {
   [class*=__container] {
     padding: 0px 10px;
   }
+
+  .loader {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {

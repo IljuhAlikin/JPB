@@ -305,6 +305,9 @@ body.lock {
   [class*="__container"] {
     padding: 0px 10px;
   }
+  .loader {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
