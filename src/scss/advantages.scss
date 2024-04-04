@@ -56,7 +56,7 @@
   top: 20px;
   font-size: clamp(24px, 3vw, 40px);
   font-weight: 700;
-  right: 30px;
+  right: 10px;
 }
 .item-column-advantages__title {
   line-height: 122%;
@@ -132,6 +132,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   .column-advantages__item {
     max-width: 100%;

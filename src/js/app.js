@@ -106,6 +106,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  const cards = document.querySelectorAll(".column-advantages__item");
+
+  // Add event listener to each card
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  });
+
   const tabLinks = document.querySelectorAll(".trade-tools-tablink");
 
   function updateActiveTabLink(activeIndex) {
