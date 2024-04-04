@@ -335,6 +335,10 @@ body.lock {
   display: none;
 }
 
+.header__logo_adaptive {
+  display: none;
+}
+
 .trade-with-us {
   padding-top: 180px;
   background: #191919;
@@ -2667,6 +2671,11 @@ ul .list-policy-agreement__item::before {
     background-color: #191919;
     top: -110vh;
     transition: all 0.3s ease;
+    overflow: auto;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    display: none;
   }
 
   .header__menu {
@@ -2773,6 +2782,15 @@ ul .list-policy-agreement__item::before {
     font-size: 18px;
   }
 
+  .header__logo_adaptive {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header__logo_adaptive img {
+    height: 92px;
+  }
+
   .header__dropdown {
     position: initial;
     top: 0;
@@ -2789,10 +2807,6 @@ ul .list-policy-agreement__item::before {
   .header__options {
     flex: initial;
     gap: 15px;
-  }
-
-  .header__text:has(.dropdown-menu.active) {
-    color: #fabe00;
   }
 
   .dropdown__texts {

@@ -38,55 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("lock");
   });
 
-  const latestNews = new Swiper(".latest-news__swiper", {
-    loop: true,
-    slidesPerView: calculateSlides(),
-    effect: "slide",
-    spaceBetween: calculateSpaceBetween(),
-    centeredSlides: false,
-    navigation: {
-      nextEl: ".latest-news-next",
-      prevEl: ".latest-news-prev",
-    },
-  });
-
-  function calculateSpaceBetween() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1920) {
-      return 30;
-    } else if (screenWidth >= 1620) {
-      return 20;
-    } else {
-      return 10;
-    }
-  }
-  function calculateSlides() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1920) {
-      return 4;
-    } else if (screenWidth >= 1620) {
-      return 3.9;
-    } else if (screenWidth >= 1520) {
-      return 3.5;
-    } else if (screenWidth >= 1440 || screenWidth > 1200) {
-      return 3.3;
-    } else if (screenWidth >= 1200 || screenWidth > 992) {
-      return 2.8;
-    } else if (screenWidth >= 992 || screenWidth > 845) {
-      return 2.3;
-    } else if (screenWidth >= 845 || screenWidth > 768) {
-      return 2;
-    } else if (screenWidth >= 768 || screenWidth > 660) {
-      return 1.8;
-    } else if (screenWidth >= 660 || screenWidth > 490) {
-      return 1.5;
-    } else if (screenWidth >= 490 || screenWidth > 420) {
-      return 1.2;
-    } else {
-      return 1;
-    }
-  }
-
   const swiper = new Swiper(".swiper", {
     loop: false,
     autoplay: {
@@ -225,4 +176,53 @@ document.addEventListener("DOMContentLoaded", function () {
       crossFade: true,
     },
   });
+
+  const latestNews = new Swiper(".latest-news__swiper", {
+    loop: true,
+    slidesPerView: calculateSlides(),
+    effect: "slide",
+    spaceBetween: calculateSpaceBetween(),
+    centeredSlides: false,
+    navigation: {
+      nextEl: ".latest-news-next",
+      prevEl: ".latest-news-prev",
+    },
+  });
+
+  function calculateSpaceBetween() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1920) {
+      return 30;
+    } else if (screenWidth >= 1620) {
+      return 20;
+    } else {
+      return 10;
+    }
+  }
+  function calculateSlides() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1920) {
+      return 4;
+    } else if (screenWidth >= 1620) {
+      return 3.9;
+    } else if (screenWidth >= 1520) {
+      return 3.5;
+    } else if (screenWidth >= 1440 || screenWidth > 1200) {
+      return 3.3;
+    } else if (screenWidth >= 1200 || screenWidth > 992) {
+      return 2.8;
+    } else if (screenWidth >= 992 || screenWidth > 845) {
+      return 2.3;
+    } else if (screenWidth >= 845 || screenWidth > 768) {
+      return 2;
+    } else if (screenWidth >= 768 || screenWidth > 660) {
+      return 1.8;
+    } else if (screenWidth >= 660 || screenWidth > 490) {
+      return 1.5;
+    } else if (screenWidth >= 490 || screenWidth > 420) {
+      return 1.2;
+    } else {
+      return 1;
+    }
+  }
 });

@@ -289,6 +289,10 @@
   }
 }
 
+.header__logo_adaptive {
+  display: none;
+}
+
 @media (max-width: 1320px) {
 }
 
@@ -328,6 +332,11 @@
     background-color: $black;
     top: -110vh;
     transition: all 0.3s ease;
+    overflow: auto;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    display: none;
   }
 
   .header__menu {
@@ -432,9 +441,15 @@
   .header__text {
     font-size: 18px;
   }
+  .header__logo_adaptive {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header__logo_adaptive img {
+    height: 92px;
+  }
   .header__dropdown {
-    // height: 0;
-    // overflow: hidden;
     position: initial;
     top: 0;
     background: none;
@@ -451,9 +466,6 @@
     gap: 15px;
   }
 
-  .header__text:has(.dropdown-menu.active) {
-    color: $yellow;
-  }
   .dropdown__texts {
     display: block;
     text-align: center;
