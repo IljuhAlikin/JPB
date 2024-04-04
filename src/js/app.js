@@ -108,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const cards = document.querySelectorAll(".column-advantages__item");
 
-  // Add event listener to each card
   cards.forEach((card) => {
     card.addEventListener("click", function () {
       this.classList.toggle("active");
@@ -152,6 +151,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateActiveTabLink(tradeToolsSwiper.realIndex);
 
+  // const spoilerButtons = document.querySelectorAll(".top-block__title");
+  // const spoilerContent = document.querySelectorAll(".block__text");
+  // const arrow = document.querySelectorAll(".arrow-spoiler");
+
+  // spoilerButtons.forEach((button, index) => {
+  //   button.addEventListener("click", () => {
+  //     spoilerButtons.forEach((btn, i) => {
+  //       if (i !== index) {
+  //         btn.classList.remove("active");
+  //         spoilerContent[i].classList.remove("active");
+  //         arrow[i].classList.remove("rotate");
+  //       }
+  //     });
+
+  //     button.classList.toggle("active");
+  //     spoilerContent[index].classList.toggle("active");
+  //     arrow[index].classList.toggle("rotate");
+  //   });
+  // });
   const spoilerButtons = document.querySelectorAll(".top-block__title");
   const spoilerContent = document.querySelectorAll(".block__text");
   const arrow = document.querySelectorAll(".arrow-spoiler");
@@ -169,6 +187,11 @@ document.addEventListener("DOMContentLoaded", function () {
       button.classList.toggle("active");
       spoilerContent[index].classList.toggle("active");
       arrow[index].classList.toggle("rotate");
+    });
+
+    // Add click event listener to arrow to toggle the accordion
+    arrow[index].addEventListener("click", () => {
+      button.click(); // Trigger click event on associated title element
     });
   });
 
