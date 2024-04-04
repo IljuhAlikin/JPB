@@ -174,7 +174,7 @@ body.lock {
   align-items: center;
   justify-items: center;
   gap: 5px;
-  flex: 0 1 50%;
+  flex: 0 1 40%;
 }
 
 .header__item {
@@ -1650,8 +1650,7 @@ body.lock {
   margin-bottom: 30px;
 }
 
-.item-withdraw__text {
-  max-width: 720px;
+.item-section__text {
   font-size: clamp(14px, 1.8vw, 20px);
 }
 
@@ -1659,7 +1658,7 @@ body.lock {
   list-style-type: decimal !important;
 }
 
-.list-withdraw__item {
+.list-section__item {
   font-size: clamp(14px, 1.8vw, 20px);
   margin-left: 30px;
   font-weight: 300;
@@ -1741,6 +1740,75 @@ body.lock {
 
 .promotions__subtitle {
   margin-bottom: 10px;
+}
+
+.list-transfer__item {
+  position: relative;
+}
+
+.list-transfer__item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: block;
+  background: #191919;
+}
+
+.transfer__title {
+  max-width: 1394px;
+}
+
+.transfer__subtitle {
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+
+.transfer__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.transfer__item {
+  flex: 0 1 807px;
+}
+
+.item-transfer__title {
+  margin-bottom: 30px;
+}
+
+.item-transfer__text {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.item-transfer__list {
+  max-width: 575px;
+}
+
+.order {
+  flex: 0 1 507px;
+}
+
+.order__img {
+  margin-bottom: 20px;
+}
+
+.order__text {
+  margin-bottom: 20px;
+}
+
+.order__link {
+  font-weight: 700;
+  color: #191919;
+}
+
+.order__link span {
+  display: block;
 }
 
 .section {
@@ -2837,6 +2905,19 @@ body.lock {
     max-width: 50px;
   }
 
+  .transfer__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .transfer__item {
+    flex: 1 1 auto;
+  }
+
+  .order__img {
+    max-width: 100px;
+  }
+
   .section {
     margin-bottom: 80px;
   }
@@ -3394,6 +3475,18 @@ body.lock {
     width: 10px;
     height: 10px;
     left: -15px;
+  }
+
+  .order__img {
+    max-width: 80px;
+  }
+
+  .item-transfer__title {
+    margin-bottom: 20px;
+  }
+
+  .transfer__subtitle {
+    margin-bottom: 40px;
   }
 
   .bottom-section__wrapper {
