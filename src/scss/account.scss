@@ -78,7 +78,8 @@ ul .list-section__item::before {
 }
 
 .master__wrapper,
-.bonus__wrapper {
+.bonus__wrapper,
+.gift-card__wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 670px 507px;
@@ -133,9 +134,15 @@ ul .list-section__item::before {
   align-items: end;
 }
 
+.gift-card__text {
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1441px) {
   .master__wrapper,
-  .bonus__wrapper {
+  .bonus__wrapper,
+  .gift-card__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -166,7 +173,8 @@ ul .list-section__item::before {
     margin-bottom: 40px;
   }
   .master__wrapper,
-  .bonus__wrapper {
+  .bonus__wrapper,
+  .gift-card__wrapper {
     grid-template-columns: 1fr;
   }
 }

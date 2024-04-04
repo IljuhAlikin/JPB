@@ -1812,7 +1812,8 @@ ul .list-section__item::before {
 }
 
 .master__wrapper,
-.bonus__wrapper {
+.bonus__wrapper,
+.gift-card__wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 670px 507px;
@@ -1826,6 +1827,11 @@ ul .list-section__item::before {
 
 .bonus .section__wrapper {
   align-items: end;
+}
+
+.gift-card__text {
+  max-width: 650px;
+  margin-bottom: 50px;
 }
 
 .section {
@@ -2019,6 +2025,10 @@ ul .list-section__item::before {
 
 .section-margin {
   margin-top: 180px;
+}
+
+.gift-card__subtitle {
+  margin-bottom: 30px;
 }
 
 .section-margin .section__title {
@@ -2318,7 +2328,8 @@ ul .list-section__item::before {
   }
 
   .master__wrapper,
-  .bonus__wrapper {
+  .bonus__wrapper,
+  .gift-card__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -3516,7 +3527,8 @@ ul .list-section__item::before {
   }
 
   .master__wrapper,
-  .bonus__wrapper {
+  .bonus__wrapper,
+  .gift-card__wrapper {
     grid-template-columns: 1fr;
   }
 
@@ -3531,5 +3543,9 @@ ul .list-section__item::before {
 
   .arrow {
     font-size: 7px;
+  }
+
+  .gift-card__subtitle {
+    margin-bottom: 20px;
   }
 }
