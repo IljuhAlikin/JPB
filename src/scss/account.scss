@@ -77,7 +77,8 @@ ul .list-section__item::before {
   display: block;
 }
 
-.master__wrapper {
+.master__wrapper,
+.bonus__wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 670px 507px;
@@ -128,8 +129,13 @@ ul .list-section__item::before {
   margin-bottom: 20px;
 }
 
+.bonus .section__wrapper {
+  align-items: end;
+}
+
 @media (max-width: 1441px) {
-  .master__wrapper {
+  .master__wrapper,
+  .bonus__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -159,7 +165,8 @@ ul .list-section__item::before {
   .section__subtitle {
     margin-bottom: 40px;
   }
-  .master__wrapper {
+  .master__wrapper,
+  .bonus__wrapper {
     grid-template-columns: 1fr;
   }
 }

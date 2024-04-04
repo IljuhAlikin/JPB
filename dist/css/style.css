@@ -1811,7 +1811,8 @@ ul .list-section__item::before {
   display: block;
 }
 
-.master__wrapper {
+.master__wrapper,
+.bonus__wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 670px 507px;
@@ -1821,6 +1822,10 @@ ul .list-section__item::before {
 
 .item-master__list {
   margin-bottom: 20px;
+}
+
+.bonus .section__wrapper {
+  align-items: end;
 }
 
 .section {
@@ -2312,7 +2317,8 @@ ul .list-section__item::before {
     flex: 0 1 380px;
   }
 
-  .master__wrapper {
+  .master__wrapper,
+  .bonus__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -3509,7 +3515,8 @@ ul .list-section__item::before {
     margin-bottom: 40px;
   }
 
-  .master__wrapper {
+  .master__wrapper,
+  .bonus__wrapper {
     grid-template-columns: 1fr;
   }
 
